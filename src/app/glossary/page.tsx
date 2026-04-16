@@ -1,9 +1,11 @@
 import { kb } from "@/lib/kb";
-import { getDict } from "@/i18n/server";
+import { getGlossaryMeaning } from "@/lib/translations";
+import { getDict, getLang } from "@/i18n/server";
 import { format } from "@/i18n/dict";
 
 export default function GlossaryPage() {
   const t = getDict();
+  const lang = getLang();
   const terms = [...kb.glossary.terms].sort((a, b) => a.term.localeCompare(b.term));
 
   const groups = new Map<string, typeof terms>();
@@ -37,7 +39,7 @@ export default function GlossaryPage() {
                   {term.sanskrit && <span className="text-sm text-gold-300 font-serif">{term.sanskrit}</span>}
                   <span className="chip text-[10px]">{term.category}</span>
                 </div>
-                <p className="text-ink-300 text-sm mt-1">{term.meaning}</p>
+                <p className="text-ink-300 text-sm mt-1">{getGlossaryMeaning(term.term, term.meaning, lang)}</p>
               </div>
             ))}
           </div>

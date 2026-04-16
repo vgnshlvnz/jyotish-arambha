@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getLevel, content } from "@/lib/kb";
+import { getLessonKeyPoints } from "@/lib/translations";
 import { LessonToggle } from "@/components/LessonToggle";
 import { getDict, getLang } from "@/i18n/server";
 import { format, pickLevelTitle, pickLevelSubtitle, pickLessonTitle } from "@/i18n/dict";
@@ -30,29 +31,26 @@ export default function LevelPage({ params }: { params: { level: string } }) {
         <p className="text-ink-300 mt-1">{pickLevelSubtitle(levelNum, lang)}</p>
       </header>
 
-      {lang === "ta" && t.common.contentInEnglishNote && (
-        <div className="card border-gold-400/30 bg-gold-400/5 text-sm text-ink-200">
-          {t.common.contentInEnglishNote}
-        </div>
-      )}
-
       <div className="grid gap-4">
-        {lvl.lessons.map((lesson, idx) => (
-          <article key={lesson.id} className="card prose-jyotish">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <div className="text-xs text-ink-300 font-mono">{lesson.id}</div>
-                <h2 className="font-serif text-xl text-gold-200 mt-0">{idx + 1}. {pickLessonTitle(lesson.id, lang)}</h2>
+        {lvl.lessons.map((lesson, idx) => {
+          const keyPoints = getLessonKeyPoints(lesson.id, lesson.key_points, lang);
+          return (
+            <article key={lesson.id} className="card prose-jyotish">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <div className="text-xs text-ink-300 font-mono">{lesson.id}</div>
+                  <h2 className="font-serif text-xl text-gold-200 mt-0">{idx + 1}. {pickLessonTitle(lesson.id, lang)}</h2>
+                </div>
+                <LessonToggle lessonId={lesson.id} />
               </div>
-              <LessonToggle lessonId={lesson.id} />
-            </div>
-            <ul>
-              {lesson.key_points.map((pt, i) => (
-                <li key={i}>{pt}</li>
-              ))}
-            </ul>
-          </article>
-        ))}
+              <ul>
+                {keyPoints.map((pt, i) => (
+                  <li key={i}>{pt}</li>
+                ))}
+              </ul>
+            </article>
+          );
+        })}
       </div>
 
       <section className="flex gap-3 pt-4 flex-wrap">

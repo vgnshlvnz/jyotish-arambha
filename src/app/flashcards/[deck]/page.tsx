@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { content, getFlashcardDeck } from "@/lib/kb";
+import { getFlashcardText } from "@/lib/translations";
 import { FlashcardPlayer } from "@/components/FlashcardPlayer";
 import { getDict, getLang } from "@/i18n/server";
 import { pickDeckTitle } from "@/i18n/dict";
@@ -15,6 +16,11 @@ export default function DeckPage({ params }: { params: { deck: string } }) {
   const deck = getFlashcardDeck(params.deck);
   if (!deck) notFound();
 
+  const translatedCards = deck.cards.map((c) => {
+    const translated = getFlashcardText(c.id, { front: c.front, back: c.back }, lang);
+    return { ...c, front: translated.front, back: translated.back };
+  });
+
   return (
     <div className="space-y-6">
       <header>
@@ -26,7 +32,7 @@ export default function DeckPage({ params }: { params: { deck: string } }) {
         <h1 className="font-serif text-3xl text-gold-200">{pickDeckTitle(params.deck, lang)}</h1>
       </header>
 
-      <FlashcardPlayer deckId={params.deck} cards={deck.cards} />
+      <FlashcardPlayer deckId={params.deck} cards={translatedCards} />
     </div>
   );
 }
