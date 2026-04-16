@@ -1,0 +1,97 @@
+{
+  "$schema": "jyotish-arambha/d9/v1",
+  "description": "Navamsa (D9) chart rules and deterministic pada→navamsa-sign mapping",
+  "source_modules": ["M3", "M5"],
+  "concept": {
+    "name": "Navamsa / D9",
+    "meaning": "'Nava' = 9, 'Amsa' = division. The 9th divisional chart.",
+    "division_size_deg": 3.3333,
+    "division_size_dms": "3°20'",
+    "note": "Each sign (30°) is divided into 9 amsas of 3°20' — identical in width to one nakshatra pada. This is why D9 and Nakshatra padas are perfectly aligned.",
+    "uses": [
+      "Marriage and spouse analysis (primary use)",
+      "Confirmation of planetary strength (D1 strength may not hold in D9)",
+      "Dharma and spiritual progress",
+      "Second half of life",
+      "Karakamsha for Ishta Devata"
+    ]
+  },
+  "calculation_rule": {
+    "description": "The starting navamsa sign of each rasi depends on the rasi's element (fire/earth/air/water) via the 'Chara-Sthira-Dwi' rotation.",
+    "algorithm": [
+      "1. For each 3°20' amsa within a sign, the navamsa sign advances by 1 from a starting sign.",
+      "2. Starting sign of the 1st amsa of each rasi:",
+      "   - Fire signs (Aries, Leo, Sagittarius) start at Aries",
+      "   - Earth signs (Taurus, Virgo, Capricorn) start at Capricorn",
+      "   - Air signs (Gemini, Libra, Aquarius) start at Libra",
+      "   - Water signs (Cancer, Scorpio, Pisces) start at Cancer",
+      "3. From the start, the 9 amsas progress through the 9 consecutive signs."
+    ]
+  },
+  "rasi_start_navamsa": {
+    "Aries": "Aries",
+    "Taurus": "Capricorn",
+    "Gemini": "Libra",
+    "Cancer": "Cancer",
+    "Leo": "Aries",
+    "Virgo": "Capricorn",
+    "Libra": "Libra",
+    "Scorpio": "Cancer",
+    "Sagittarius": "Aries",
+    "Capricorn": "Capricorn",
+    "Aquarius": "Libra",
+    "Pisces": "Cancer"
+  },
+  "vargottama": {
+    "definition": "When a planet or Lagna occupies the same sign in both D1 (Rasi) and D9 (Navamsa).",
+    "effect": "Extra strength — the planet is firmly established in its sign.",
+    "vargottama_ranges": {
+      "note": "Vargottama occurs in specific degree bands where navamsa sign equals rasi sign.",
+      "movable_signs_chara": "0°00' - 3°20' (1st amsa)",
+      "fixed_signs_sthira": "13°20' - 16°40' (5th amsa)",
+      "dual_signs_dwi_swabhava": "26°40' - 30°00' (9th amsa)"
+    }
+  },
+  "pushkara_navamsa": {
+    "definition": "Auspicious specific degrees. A planet placed at Pushkara gives very auspicious results.",
+    "note": "Traditionally specific amsas within each sign — refer to classical texts for precise Pushkara degree bands."
+  },
+  "karakamsha": {
+    "definition": "Jaimini: the sign in the D9 Navamsa chart occupied by the Atmakaraka.",
+    "use": "The 12th house from Karakamsha Lagna reveals Ishta Devata (presiding deity) and spiritual path.",
+    "atmakaraka_rule": "The planet with the highest absolute longitude (ignoring the sign) in the chart. 7 or 8 chara karakas depending on school."
+  },
+  "pada_to_navamsa_mapping": {
+    "description": "Each of the 108 nakshatra padas maps to exactly one navamsa sign. Derived from the Nakshatra CSV.",
+    "rule": "The sequence Ashwini Pd1 → Revati Pd4 cycles through the 12 navamsa signs starting from Aries. Every nakshatra spans 4 padas = 4 navamsas.",
+    "by_nakshatra": [
+      {"nak": "Ashwini", "rasi": "Aries", "padas": ["Aries", "Taurus", "Gemini", "Cancer"]},
+      {"nak": "Bharani", "rasi": "Aries", "padas": ["Leo", "Virgo", "Libra", "Scorpio"]},
+      {"nak": "Krittika", "rasi_split": "Aries(1) + Taurus(3)", "padas": ["Sagittarius", "Capricorn", "Aquarius", "Pisces"]},
+      {"nak": "Rohini", "rasi": "Taurus", "padas": ["Aries", "Taurus", "Gemini", "Cancer"]},
+      {"nak": "Mrigashira", "rasi_split": "Taurus(2) + Gemini(2)", "padas": ["Leo", "Virgo", "Libra", "Scorpio"]},
+      {"nak": "Ardra", "rasi": "Gemini", "padas": ["Sagittarius", "Capricorn", "Aquarius", "Pisces"]},
+      {"nak": "Punarvasu", "rasi_split": "Gemini(3) + Cancer(1)", "padas": ["Aries", "Taurus", "Gemini", "Cancer"]},
+      {"nak": "Pushya", "rasi": "Cancer", "padas": ["Leo", "Virgo", "Libra", "Scorpio"]},
+      {"nak": "Ashlesha", "rasi": "Cancer", "padas": ["Sagittarius", "Capricorn", "Aquarius", "Pisces"]},
+      {"nak": "Magha", "rasi": "Leo", "padas": ["Aries", "Taurus", "Gemini", "Cancer"]},
+      {"nak": "Purva Phalguni", "rasi": "Leo", "padas": ["Leo", "Virgo", "Libra", "Scorpio"]},
+      {"nak": "Uttara Phalguni", "rasi_split": "Leo(1) + Virgo(3)", "padas": ["Sagittarius", "Capricorn", "Aquarius", "Pisces"]},
+      {"nak": "Hasta", "rasi": "Virgo", "padas": ["Aries", "Taurus", "Gemini", "Cancer"]},
+      {"nak": "Chitra", "rasi_split": "Virgo(2) + Libra(2)", "padas": ["Leo", "Virgo", "Libra", "Scorpio"]},
+      {"nak": "Swati", "rasi": "Libra", "padas": ["Sagittarius", "Capricorn", "Aquarius", "Pisces"]},
+      {"nak": "Visakha", "rasi_split": "Libra(3) + Scorpio(1)", "padas": ["Aries", "Taurus", "Gemini", "Cancer"]},
+      {"nak": "Anuradha", "rasi": "Scorpio", "padas": ["Leo", "Virgo", "Libra", "Scorpio"]},
+      {"nak": "Jyeshtha", "rasi": "Scorpio", "padas": ["Sagittarius", "Capricorn", "Aquarius", "Pisces"]},
+      {"nak": "Moola", "rasi": "Sagittarius", "padas": ["Aries", "Taurus", "Gemini", "Cancer"]},
+      {"nak": "Purva Ashada", "rasi": "Sagittarius", "padas": ["Leo", "Virgo", "Libra", "Scorpio"]},
+      {"nak": "Uttara Ashada", "rasi_split": "Sagittarius(1) + Capricorn(3)", "padas": ["Sagittarius", "Capricorn", "Aquarius", "Pisces"]},
+      {"nak": "Shravana", "rasi": "Capricorn", "padas": ["Aries", "Taurus", "Gemini", "Cancer"]},
+      {"nak": "Dhanishtha", "rasi_split": "Capricorn(2) + Aquarius(2)", "padas": ["Leo", "Virgo", "Libra", "Scorpio"]},
+      {"nak": "Shatabisha", "rasi": "Aquarius", "padas": ["Sagittarius", "Capricorn", "Aquarius", "Pisces"]},
+      {"nak": "Purva Bhadrapada", "rasi_split": "Aquarius(3) + Pisces(1)", "padas": ["Aries", "Taurus", "Gemini", "Cancer"]},
+      {"nak": "Uttara Bhadrapada", "rasi": "Pisces", "padas": ["Leo", "Virgo", "Libra", "Scorpio"]},
+      {"nak": "Revati", "rasi": "Pisces", "padas": ["Sagittarius", "Capricorn", "Aquarius", "Pisces"]}
+    ]
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "$schema": "jyotish-arambha/curriculum/v1",
+  "title": "Jyotish Arambha — Beginner to Navamsa",
+  "description": "7-level progressive curriculum derived from Modules 1–6 + Assignments. Each level unlocks the next when the learner passes its quiz.",
+  "source_modules": ["M1", "M2", "M3", "M4 Day1+2", "M5 Day1+2", "M6 Day1+2"],
+  "levels": [
+    {
+      "level": 1,
+      "title": "What is Jyotish?",
+      "subtitle": "Origins, branches, and the language of light",
+      "unlock_requirement": null,
+      "estimated_minutes": 45,
+      "source": "Module 1",
+      "lessons": [
+        {
+          "id": "L1.1",
+          "title": "Astrology vs Astronomy",
+          "key_points": [
+            "Astrology = interpretation, Astronomy = observation",
+            "Astrology uses astronomical calculation to map charts",
+            "Vedic astrology = Jyotish = 'Light of God' (Jyoti + Isha)"
+          ]
+        },
+        {
+          "id": "L1.2",
+          "title": "Origins — from Sumer to India",
+          "key_points": [
+            "Sumerian (c.2000 BCE) → Babylonian (zodiac) → Egyptian (decans) → Greek (ascendant)",
+            "Vedic Jyotish originates from the Vedas (Rig, Yajur, Sama, Atharva)",
+            "Jyotisha is one of the 6 Vedangas (limbs of the Veda)"
+          ]
+        },
+        {
+          "id": "L1.3",
+          "title": "Three Branches (Skandha Trayam)",
+          "key_points": [
+            "Siddhanta — mathematical and astronomical foundations",
+            "Samhita — mundane astrology (nations, weather, omens)",
+            "Hora — natal/predictive astrology (individual charts)"
+          ]
+        },
+        {
+          "id": "L1.4",
+          "title": "Six Angas of Jyotish",
+          "key_points": ["Jataka (natal)", "Prasna (horary)", "Muhurta (electional)", "Nimitta (omens)", "Ganita (math)", "Gola (spherical astronomy)"]
+        },
+        {
+          "id": "L1.5",
+          "title": "The 5 Core Building Blocks",
+          "key_points": [
+            "9 Grahas (planets)",
+            "12 Rasis (signs)",
+            "12 Bhavas (houses)",
+            "27 Nakshatras (lunar mansions)",
+            "Karakatwas (significations)"
+          ]
+        }
+      ],
+      "quiz_ref": "Q1",
+      "flashcards_ref": "FC1"
+    },
+    {
+      "level": 2,
+      "title": "Astronomy Foundations",
+      "subtitle": "The sky, the zodiac belt, and celestial mechanics",
+      "unlock_requirement": "Pass L1 quiz",
+      "estimated_minutes": 60,
+      "source": "Module 2",
+      "lessons": [
+        {
+          "id": "L2.1",
+          "title": "Geocentric vs Heliocentric",
+          "key_points": [
+            "Jyotish uses the Geocentric model (Earth-centred, as observed)",
+            "Ptolemy (2nd century CE) popularised the Geocentric system",
+            "Heliocentric = Sun-centred (Copernicus, 16th century)"
+          ]
+        },
+        {
+          "id": "L2.2",
+          "title": "The Celestial Sphere",
+          "key_points": [
+            "Zenith = directly overhead (MC / Medium Coeli)",
+            "Nadir = directly below (IC / Imum Coeli)",
+            "Ecliptic = Sun's apparent yearly path"
+          ]
+        },
+        {
+          "id": "L2.3",
+          "title": "The Zodiac Belt (Bha-Chakra)",
+          "key_points": [
+            "360° divided into 12 equal signs of 30°",
+            "12 × 30° = 360°; each sign = 1 month of Sun transit",
+            "8° north-south of the ecliptic forms the luminous band",
+            "Bha = shine, Chakra = wheel → 'shining wheel'"
+          ]
+        },
+        {
+          "id": "L2.4",
+          "title": "Tropical vs Sidereal + Ayanamsa",
+          "key_points": [
+            "Tropical (Sayana) = season-based; Vernal Equinox = 0° Aries",
+            "Sidereal (Nirayana) = star-based; Ashwini = 0° Aries — used in Jyotish",
+            "Ayanamsa = difference between the two; currently ~24°",
+            "Precession drifts the equinox ~1° every 72 years"
+          ]
+        },
+        {
+          "id": "L2.5",
+          "title": "The 9 Grahas — an overview",
+          "key_points": [
+            "Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu",
+            "Sun and Moon = luminaries; Mars–Saturn = true planets; Rahu/Ketu = lunar nodes (mathematical)",
+            "Neptune and Uranus are NOT used in Jyotish (too slow, weak tidal force)"
+          ]
+        },
+        {
+          "id": "L2.6",
+          "title": "Rahu and Ketu — the lunar nodes",
+          "key_points": [
+            "Mathematical points where Moon's orbit crosses the ecliptic",
+            "Rahu = North Node (ascending), Ketu = South Node (descending)",
+            "Always 180° apart, always retrograde, change signs every ~18 months, full cycle ~18.6 years",
+            "Rahu behaves like Saturn; Ketu behaves like Mars"
+          ]
+        }
+      ],
+      "quiz_ref": "Q2",
+      "flashcards_ref": "FC2"
+    },
+    {
+      "level": 3,
+      "title": "The 27 Nakshatras",
+      "subtitle": "Lunar mansions, padas, and the Vimshottari cycle",
+      "unlock_requirement": "Pass L2 quiz",
+      "estimated_minutes": 90,
+      "source": "Module 2 + Module 5",
+      "lessons": [
+        {
+          "id": "L3.1",
+          "title": "Why 27 Nakshatras?",
+          "key_points": [
+            "360° ÷ 27 = 13°20' per nakshatra",
+            "Moon takes ~27 days to orbit Earth → 1 nakshatra per day",
+            "Moon defines the 27 divisions; Sun defines the 12 signs"
+          ]
+        },
+        {
+          "id": "L3.2",
+          "title": "Padas — the quarter divisions",
+          "key_points": [
+            "Each nakshatra = 4 padas of 3°20' each",
+            "27 × 4 = 108 padas total",
+            "Each rasi contains 9 padas (2¼ nakshatras)",
+            "Pada size = navamsa division size → D9 = nakshatra pada chart"
+          ]
+        },
+        {
+          "id": "L3.3",
+          "title": "The Vimshottari Lord Cycle",
+          "key_points": [
+            "Order: Ketu → Venus → Sun → Moon → Mars → Rahu → Jupiter → Saturn → Mercury",
+            "Cycle repeats 3 times across 27 nakshatras",
+            "Same order governs the 120-year Vimshottari Dasha"
+          ]
+        },
+        {
+          "id": "L3.4",
+          "title": "Pariyaya — 3 groups of 9",
+          "key_points": [
+            "Paryaya 1: Ashwini to Ashlesha",
+            "Paryaya 2: Magha to Jyeshtha",
+            "Paryaya 3: Moola to Revati",
+            "Each group gets same lord sequence"
+          ]
+        },
+        {
+          "id": "L3.5",
+          "title": "Nakshatra classifications",
+          "key_points": [
+            "Gana: Deva / Manushya / Rakshasa (marriage compatibility)",
+            "Guna: 3-level Rajas/Tamas/Sattva assignment",
+            "Nature: Chara, Sthira, Tikshna, Ugra, Laghu, Mridu, Misra",
+            "Orientation: Adho Mukha, Urdhwa Mukha, Tiryanga Mukha"
+          ]
+        },
+        {
+          "id": "L3.6",
+          "title": "Janma Nakshatra and Tarabalam",
+          "key_points": [
+            "Janma Nakshatra = Moon's nakshatra at birth",
+            "Used for: naming, Dasha start, daily auspiciousness",
+            "Nava Tara Chakra: 9 groups from Janma — Janma, Sampat, Vipat, Kshema, Pratyak, Sadhaka, Naidhana, Mitra, Adhi-Mitra"
+          ]
+        }
+      ],
+      "quiz_ref": "Q3",
+      "flashcards_ref": "FC3"
+    },
+    {
+      "level": 4,
+      "title": "The 9 Grahas — Deep Dive",
+      "subtitle": "Karakatwas, dignity, friendships, and aspects",
+      "unlock_requirement": "Pass L3 quiz",
+      "estimated_minutes": 120,
+      "source": "Module 4 Day 1 + Day 2",
+      "lessons": [
+        {
+          "id": "L4.1",
+          "title": "Karakatwas — what each planet signifies",
+          "key_points": ["Sun = Self, Father, Power", "Moon = Mind, Mother, Emotions", "Mars = Energy, Siblings, Land", "Mercury = Intelligence, Speech", "Jupiter = Wisdom, Wealth, Children", "Venus = Love, Marriage, Arts", "Saturn = Discipline, Longevity, Service", "Rahu = Illusion, Foreign, Obsession", "Ketu = Moksha, Mysticism, Detachment"]
+        },
+        {
+          "id": "L4.2",
+          "title": "The Planetary Cabinet",
+          "key_points": ["Sun = King", "Moon = Queen", "Mercury = Prince", "Jupiter + Venus = Ministers/Advisors", "Mars = Commander-in-Chief", "Saturn = Servant", "Rahu + Ketu = Army"]
+        },
+        {
+          "id": "L4.3",
+          "title": "Gender, Guna, Element, Varna, Direction",
+          "key_points": ["Masculine: Sun, Mars, Jupiter", "Feminine: Moon, Venus, Rahu", "Neuter: Mercury, Saturn, Ketu", "Sattva: Sun, Moon, Jupiter / Rajas: Mercury, Venus / Tamas: Mars, Saturn, Rahu, Ketu"]
+        },
+        {
+          "id": "L4.4",
+          "title": "Sign Ownership (Rasi Swami)",
+          "key_points": [
+            "Sun → Leo | Moon → Cancer",
+            "Mars → Aries, Scorpio | Venus → Taurus, Libra",
+            "Mercury → Gemini, Virgo | Jupiter → Sagittarius, Pisces",
+            "Saturn → Capricorn, Aquarius",
+            "Derived from Solar/Lunar Hora division"
+          ]
+        },
+        {
+          "id": "L4.5",
+          "title": "Exaltation and Debilitation (Uchcha / Neecha)",
+          "key_points": [
+            "Sun: Exalted Aries 10° / Debil. Libra 10°",
+            "Moon: Exalted Taurus 3° / Debil. Scorpio 3°",
+            "Mars: Exalted Capricorn 28° / Debil. Cancer 28°",
+            "Mercury: Exalted Virgo 15° / Debil. Pisces 15°",
+            "Jupiter: Exalted Cancer 5° / Debil. Capricorn 5°",
+            "Venus: Exalted Pisces 27° / Debil. Virgo 27°",
+            "Saturn: Exalted Libra 20° / Debil. Aries 20°"
+          ]
+        },
+        {
+          "id": "L4.6",
+          "title": "Moolatrikona and Swakshetra",
+          "key_points": [
+            "Moolatrikona = trinal strength zone within own sign",
+            "Sun: Leo 0-20°, Moon: Taurus 3-30°, Mars: Aries 0-12°",
+            "Mercury: Virgo 15-20°, Jupiter: Sag 0-10°, Venus: Libra 0-15°, Saturn: Aquarius 0-20°",
+            "Swakshetra = rest of own sign (positive sign at lower degrees)"
+          ]
+        },
+        {
+          "id": "L4.7",
+          "title": "Planetary Friendship (Naisargika Maitri)",
+          "key_points": [
+            "Based on positions from Moolatrikona sign",
+            "Friends = lords of 2/4/5/8/9/12 from Moolatrikona",
+            "Enemies = lords of 3/6/7/10/11",
+            "Temporal (Tatkalika) = 2/3/4/10/11/12 from planet = friends; 1/5/6/7/8/9 = enemies",
+            "Panchadha = Natural + Temporal combined → 5 levels"
+          ]
+        },
+        {
+          "id": "L4.8",
+          "title": "Directional Strength (Dig Bala)",
+          "key_points": [
+            "1st house (East) = Mercury + Jupiter strong, Saturn weak",
+            "4th house (North) = Moon + Venus strong, Sun + Mars weak",
+            "7th house (West) = Saturn strong, Mercury + Jupiter weak",
+            "10th house (South) = Sun + Mars strong, Moon + Venus weak"
+          ]
+        },
+        {
+          "id": "L4.9",
+          "title": "Aspects (Drishti)",
+          "key_points": [
+            "All planets aspect 7th from themselves",
+            "Mars: 4th, 7th, 8th",
+            "Jupiter: 5th, 7th, 9th",
+            "Saturn: 3rd, 7th, 10th",
+            "Rahu/Ketu: 5th, 7th, 9th (some say 3rd/7th/11th)"
+          ]
+        },
+        {
+          "id": "L4.10",
+          "title": "Conjunctions (Yuti) and Combustion (Astanga)",
+          "key_points": [
+            "Conjunction = multiple planets in same sign",
+            "Example yogas: Buddhi-Aditya (Sun+Mercury), Gajakesari (Moon+Jupiter), Guru-Chandala (Jupiter+Rahu)",
+            "Combustion orbs: Moon 12°, Mars 17°, Mercury 14°, Jupiter 11°, Venus 10°, Saturn 15°"
+          ]
+        },
+        {
+          "id": "L4.11",
+          "title": "Avasthas — planetary states",
+          "key_points": [
+            "Baladi (5 states based on degree in sign): Bala, Kumara, Yuva, Vriddha, Mrita",
+            "Deeptadi (9 states based on dignity): Deepta, Svastha, Mudita, Shanta, Deena, Dhukita, Vikala, Kala, Kopa"
+          ]
+        }
+      ],
+      "quiz_ref": "Q4",
+      "flashcards_ref": "FC4"
+    },
+    {
+      "level": 5,
+      "title": "The 12 Rasis (Signs)",
+      "subtitle": "Qualities, elements, and the Kalapurusha mapping",
+      "unlock_requirement": "Pass L4 quiz",
+      "estimated_minutes": 120,
+      "source": "Module 5 Day 1 + Day 2",
+      "lessons": [
+        {
+          "id": "L5.1",
+          "title": "The 12 Signs and Their Lords",
+          "key_points": [
+            "Aries (Mars), Taurus (Venus), Gemini (Mercury), Cancer (Moon), Leo (Sun), Virgo (Mercury)",
+            "Libra (Venus), Scorpio (Mars), Sagittarius (Jupiter), Capricorn (Saturn), Aquarius (Saturn), Pisces (Jupiter)",
+            "Sanskrit + Tamil names — Mesha, Vrishabha, Mithuna, Karka..."
+          ]
+        },
+        {
+          "id": "L5.2",
+          "title": "Four Elements (Tattvas)",
+          "key_points": [
+            "Fire (Agni) — Aries, Leo, Sagittarius — 'Creation'",
+            "Earth (Prithvi) — Taurus, Virgo, Capricorn — 'Preservation'",
+            "Air (Vayu) — Gemini, Libra, Aquarius — 'Movement'",
+            "Water (Jala) — Cancer, Scorpio, Pisces — 'Application'",
+            "Ether (Akasha) — no sign; Jupiter is its rightful ruler"
+          ]
+        },
+        {
+          "id": "L5.3",
+          "title": "Three Modalities (Qualities)",
+          "key_points": [
+            "Cardinal/Movable (Chara) — Aries, Cancer, Libra, Capricorn — initiators",
+            "Fixed (Sthira) — Taurus, Leo, Scorpio, Aquarius — stabilizers",
+            "Mutable/Dual (Dwi Swabhava) — Gemini, Virgo, Sagittarius, Pisces — adapters"
+          ]
+        },
+        {
+          "id": "L5.4",
+          "title": "Purushartha Mapping",
+          "key_points": [
+            "Dharma: Aries, Leo, Sagittarius",
+            "Artha: Taurus, Virgo, Capricorn",
+            "Kama: Gemini, Libra, Aquarius",
+            "Moksha: Cancer, Scorpio, Pisces"
+          ]
+        },
+        {
+          "id": "L5.5",
+          "title": "Gender, Varna, Direction",
+          "key_points": [
+            "Odd signs = male/krura; Even signs = female/saumya",
+            "Varna — Brahmin (water), Kshatriya (fire), Vaishya (earth), Shudra (air)",
+            "Direction — Fire→East, Earth→South, Air→West, Water→North"
+          ]
+        },
+        {
+          "id": "L5.6",
+          "title": "Body Mapping (Kalapurusha)",
+          "key_points": [
+            "Aries → Head | Taurus → Face/Neck | Gemini → Arms/Shoulders",
+            "Cancer → Chest/Heart | Leo → Stomach | Virgo → Waist/Intestines",
+            "Libra → Lower abdomen | Scorpio → Hidden parts | Sagittarius → Thighs",
+            "Capricorn → Knees | Aquarius → Calves | Pisces → Feet"
+          ]
+        },
+        {
+          "id": "L5.7",
+          "title": "Functional Classifications",
+          "key_points": [
+            "Nature of rising: Shirshodaya (head-first, day-strong) vs Prishthodaya (back-first, night-strong)",
+            "Form: Nara (biped), Chatushpada (quadruped), Keeta (reptile), Jala (watery)",
+            "Fruitful/Semi/Barren — Water is fruitful, Fire is barren",
+            "Ascension duration: Short/Medium/Long"
+          ]
+        },
+        {
+          "id": "L5.8",
+          "title": "Doshas per Sign (Ayurvedic body function)",
+          "key_points": [
+            "Fire signs → Pitta",
+            "Earth signs → Vata",
+            "Water signs → Kapha",
+            "Air signs → Mixed (Sama)"
+          ]
+        },
+        {
+          "id": "L5.9",
+          "title": "Three Lagnas: Janma, Chandra, Surya",
+          "key_points": [
+            "Janma Lagna = Ascendant at birth (physical body, life direction)",
+            "Chandra Lagna = Moon's sign (mind, emotions — most used in daily Jyotish)",
+            "Surya Lagna = Sun's sign (soul, life purpose)",
+            "Analyse all three; cross-check predictions"
+          ]
+        }
+      ],
+      "quiz_ref": "Q5",
+      "flashcards_ref": "FC5"
+    },
+    {
+      "level": 6,
+      "title": "The 12 Bhavas (Houses) & Chart Reading",
+      "subtitle": "Domains of life, classifications, and Raja Yoga",
+      "unlock_requirement": "Pass L5 quiz",
+      "estimated_minutes": 150,
+      "source": "Module 6 Day 1 + Day 2",
+      "lessons": [
+        {
+          "id": "L6.1",
+          "title": "Signs vs Houses — the critical distinction",
+          "key_points": [
+            "Signs = fixed qualities of the zodiac (universal)",
+            "Houses = life domains, rotate from Lagna (personal)",
+            "A planet's house tells WHERE it acts; its sign tells HOW it acts"
+          ]
+        },
+        {
+          "id": "L6.2",
+          "title": "The 12 Houses — significations",
+          "key_points": [
+            "1st Tanu: Self, body, head",
+            "2nd Dhana: Wealth, family, speech",
+            "3rd Sahaja: Siblings, courage, communication",
+            "4th Bandhu: Mother, home, happiness",
+            "5th Putra: Children, wisdom, Purva Punya",
+            "6th Ari: Enemies, diseases, debts, service",
+            "7th Yuvati: Spouse, partnerships, public",
+            "8th Randhra: Longevity, occult, transformation",
+            "9th Dharma: Father, fortune, religion",
+            "10th Karma: Career, status, authority",
+            "11th Labha: Gains, friends, desires fulfilled",
+            "12th Vyaya: Losses, liberation, isolation"
+          ]
+        },
+        {
+          "id": "L6.3",
+          "title": "Natural Karakas for Houses",
+          "key_points": [
+            "1st: Sun | 2nd: Jupiter | 3rd: Mars | 4th: Moon & Mercury | 5th: Jupiter",
+            "6th: Mars & Saturn | 7th: Venus | 8th: Saturn | 9th: Sun & Jupiter",
+            "10th: Sun + Jupiter + Mercury + Saturn | 11th: Jupiter | 12th: Saturn"
+          ]
+        },
+        {
+          "id": "L6.4",
+          "title": "Kendra, Trikona, Upachaya, Dusthana",
+          "key_points": [
+            "Kendra (1,4,7,10) — Angular/Vishnu Sthana — strongest houses",
+            "Trikona (1,5,9) — Trines/Lakshmi Sthana — most auspicious",
+            "Upachaya (3,6,10,11) — Growth houses — malefics do well",
+            "Dusthana (6,8,12) — Difficult houses",
+            "Maraka (2,7) — death-inflicting (longevity analysis)",
+            "Panapara (2,5,8,11) succedent, Apoklima (3,6,9,12) cadent"
+          ]
+        },
+        {
+          "id": "L6.5",
+          "title": "House Lordship (Athipathi)",
+          "key_points": [
+            "A house's lord = planet ruling the sign occupying that house",
+            "Example: if Leo is 10th House, Sun becomes 10th Lord",
+            "The condition and placement of the lord determines how that domain manifests",
+            "Functional benefics/malefics differ per Lagna"
+          ]
+        },
+        {
+          "id": "L6.6",
+          "title": "Yogakaraka and Raja Yoga",
+          "key_points": [
+            "Kendra + Trikona lord combinations → Raja Yoga",
+            "Yogakaraka = one planet that lords BOTH a Kendra and a Trikona",
+            "Taurus Lagna → Saturn (9+10) | Cancer → Mars (5+10) | Leo → Mars (4+9)",
+            "Libra → Saturn (4+5) | Capricorn → Venus (5+10) | Aquarius → Venus (4+9)"
+          ]
+        },
+        {
+          "id": "L6.7",
+          "title": "Kendradhipathi Dosa",
+          "key_points": [
+            "Natural benefics lose beneficence when they rule Kendras",
+            "Applies strongly to dual-sign Lagnas: Gemini, Virgo, Sagittarius, Pisces",
+            "1st lord exempt if it also owns a Trikona"
+          ]
+        },
+        {
+          "id": "L6.8",
+          "title": "Badhaka — the obstructing house",
+          "key_points": [
+            "Movable Lagnas → 11th is Badhaka",
+            "Fixed Lagnas → 9th is Badhaka",
+            "Dual Lagnas → 7th is Badhaka"
+          ]
+        },
+        {
+          "id": "L6.9",
+          "title": "Bhavat Bhavam & Dispositors",
+          "key_points": [
+            "2nd-from-2nd = 3rd (speech supports wealth)",
+            "5th-from-5th = 9th (creativity blessed by fortune)",
+            "7th-from-7th = 1st (partnerships rely on self)",
+            "Dispositor = lord of the sign where a planet sits"
+          ]
+        },
+        {
+          "id": "L6.10",
+          "title": "First Steps to Analyse a Chart",
+          "key_points": [
+            "1. House Rasi — sign occupying the house",
+            "2. House Lord — where the lord sits",
+            "3. Occupants — who is in the house",
+            "4. Aspects — who is looking at it"
+          ]
+        }
+      ],
+      "quiz_ref": "Q6",
+      "flashcards_ref": "FC6"
+    },
+    {
+      "level": 7,
+      "title": "Navamsa (D9) — Unlock",
+      "subtitle": "The 9th division: marriage, strength, and dharma",
+      "unlock_requirement": "Complete L1–L6 and score ≥ 70% on all quizzes",
+      "estimated_minutes": 90,
+      "source": "Module 3 (Divisional Charts) + Module 5 (D9 Mapping) + Navamsa Calculator",
+      "lessons": [
+        {
+          "id": "L7.1",
+          "title": "What is Navamsa?",
+          "key_points": [
+            "D9 = ninth divisional chart (Nava + Amsa)",
+            "Each sign divided into 9 amsas of 3°20'",
+            "Division size = one nakshatra pada",
+            "27 × 4 padas = 12 × 9 amsas = 108 units"
+          ]
+        },
+        {
+          "id": "L7.2",
+          "title": "How to Calculate Navamsa",
+          "key_points": [
+            "Fire signs → amsas start from Aries",
+            "Earth signs → amsas start from Capricorn",
+            "Air signs → amsas start from Libra",
+            "Water signs → amsas start from Cancer",
+            "9 amsas progress through 9 consecutive signs"
+          ]
+        },
+        {
+          "id": "L7.3",
+          "title": "Pada to Navamsa",
+          "key_points": [
+            "Each nakshatra pada maps to one navamsa sign",
+            "Same mapping can be read from the Nakshatra Table",
+            "Ashwini Pd1 → Aries | Pd2 → Taurus | Pd3 → Gemini | Pd4 → Cancer",
+            "Ashwini Bh4 → Cancer; Bharani Pd1 → Leo, etc."
+          ]
+        },
+        {
+          "id": "L7.4",
+          "title": "Vargottama and Pushkara",
+          "key_points": [
+            "Vargottama = same sign in D1 and D9 (extra strength)",
+            "Movable signs vargottama = 0-3°20' (1st amsa)",
+            "Fixed signs vargottama = 13°20'-16°40' (5th amsa)",
+            "Dual signs vargottama = 26°40'-30° (9th amsa)"
+          ]
+        },
+        {
+          "id": "L7.5",
+          "title": "Uses of D9",
+          "key_points": [
+            "Primary use: spouse / marriage analysis",
+            "Confirms planetary strength from D1",
+            "Second half of life",
+            "Dharma and spiritual direction",
+            "Karakamsha Lagna = sign of Atmakaraka in D9; 12th from it reveals Ishta Devata (Jaimini)"
+          ]
+        },
+        {
+          "id": "L7.6",
+          "title": "Beginner Interpretation Workflow",
+          "key_points": [
+            "1. Locate each planet's nakshatra and pada",
+            "2. Map the pada to its navamsa sign",
+            "3. Check if any planet is Vargottama",
+            "4. Check if debilitated D1 planets become exalted in D9",
+            "5. Read the 7th house of D9 for spouse indications"
+          ]
+        }
+      ],
+      "quiz_ref": "Q7",
+      "flashcards_ref": "FC7"
+    }
+  ],
+  "crash_course_7_day": {
+    "title": "7-Day Crash Course",
+    "description": "Fast-track path through the levels for motivated learners",
+    "days": [
+      {"day": 1, "focus": "Level 1 + Level 2", "time_minutes": 105},
+      {"day": 2, "focus": "Level 3", "time_minutes": 90},
+      {"day": 3, "focus": "Level 4 (first half)", "time_minutes": 60},
+      {"day": 4, "focus": "Level 4 (second half)", "time_minutes": 60},
+      {"day": 5, "focus": "Level 5", "time_minutes": 120},
+      {"day": 6, "focus": "Level 6", "time_minutes": 150},
+      {"day": 7, "focus": "Level 7 + revision", "time_minutes": 120}
+    ]
+  }
+}

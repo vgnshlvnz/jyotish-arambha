@@ -1,0 +1,279 @@
+{
+  "$schema": "jyotish-arambha/bhavas/v1",
+  "description": "12 Bhavas (Houses) — significations, karakas, classifications and interpretive rules",
+  "source_modules": ["M2", "M3", "M6 Day1", "M6 Day2"],
+  "definition": "Bhava = state of being. Houses are 12 equal 30° divisions of the celestial sphere calculated from the Ascendant (Lagna). Houses are domains of life; Signs are the qualities coloring those domains.",
+  "house_systems": [
+    {"name": "Equal House (Vedic default)", "note": "Each house = 30° from Ascendant. Preserves Rasi/Bhava 1:1 mapping."},
+    {"name": "Whole Sign", "note": "Rising sign = entire 1st house. Used in Hellenistic and Vedic traditions."},
+    {"name": "Porphyry", "note": "Asc = midpoint, 15° before and after."},
+    {"name": "Placidus", "note": "Western; unequal houses based on rising time; fails at polar latitudes."},
+    {"name": "Bhava Chalit (Sripathy)", "note": "Uses actual Lagna degree as the midpoint of 1st Bhava; planets may shift houses relative to Rasi chart."}
+  ],
+  "bhavas": [
+    {
+      "num": 1, "sanskrit": "Tanu Bhava", "english": "House of Self / Body",
+      "tamil": "Lagnasthānam / Thanu Sthānam",
+      "natural_sign": "Aries", "natural_ruler": "Mars", "natural_karaka": "Sun",
+      "kendra": true, "trikona": true, "upachaya": false, "dusthana": false, "maraka": false,
+      "purushartha": "dharma",
+      "significations": [
+        "Self, physique, appearance, complexion",
+        "Vigour, vitality, health, longevity start",
+        "Personality, innate nature, happiness/grief",
+        "Head, brain"
+      ],
+      "body_parts": "Body, head, brain",
+      "notes": "Both Kendra and Trikona — Ascendant is always auspicious. The most important house."
+    },
+    {
+      "num": 2, "sanskrit": "Dhana Bhava", "english": "House of Wealth and Family",
+      "tamil": "Dhana Sthānam",
+      "natural_sign": "Taurus", "natural_ruler": "Venus", "natural_karaka": "Jupiter",
+      "kendra": false, "trikona": false, "upachaya": false, "dusthana": false, "maraka": true,
+      "purushartha": "artha",
+      "significations": [
+        "Accumulated wealth, possessions",
+        "Family, close relatives",
+        "Speech, voice",
+        "Food, nourishment"
+      ],
+      "body_parts": "Mouth, right eye, face, nose, tongue, teeth, oral cavity",
+      "notes": "Maraka (killer) house — 12th from 3rd (life force)."
+    },
+    {
+      "num": 3, "sanskrit": "Sahaja Bhava", "english": "House of Siblings and Courage",
+      "tamil": "Sahōdhara Sthānam",
+      "natural_sign": "Gemini", "natural_ruler": "Mercury", "natural_karaka": "Mars",
+      "kendra": false, "trikona": false, "upachaya": true, "dusthana": false, "maraka": false,
+      "purushartha": "kama",
+      "significations": [
+        "Younger siblings",
+        "Courage, valour, initiative",
+        "Writing, communication, hobbies",
+        "Short journeys",
+        "Sports, athletics, artistic skills"
+      ],
+      "body_parts": "Arms, shoulders, hands, neck, collarbones, right ear, respiratory organs, thyroid",
+      "notes": "Upachaya (growth) house — malefics do well here; 3rd is Jeeva Shakti (life force)."
+    },
+    {
+      "num": 4, "sanskrit": "Bandhu Bhava / Sukha Bhava", "english": "House of Home / Mother / Happiness",
+      "tamil": "Bandhu Sthānam",
+      "natural_sign": "Cancer", "natural_ruler": "Moon", "natural_karaka": ["Moon", "Mercury"],
+      "kendra": true, "trikona": false, "upachaya": false, "dusthana": false, "maraka": false,
+      "purushartha": "moksha",
+      "significations": [
+        "Mother, home, homeland",
+        "Happiness, emotional stability, mental peace",
+        "Property, vehicles, real estate",
+        "Childhood experiences, foundations",
+        "Heart"
+      ],
+      "body_parts": "Heart, chest, lungs, diaphragm, blood circulation",
+      "notes": "Kendra / Vishnu Sthana."
+    },
+    {
+      "num": 5, "sanskrit": "Putra Bhava", "english": "House of Children and Creativity",
+      "tamil": "Putra Sthānam",
+      "natural_sign": "Leo", "natural_ruler": "Sun", "natural_karaka": "Jupiter",
+      "kendra": false, "trikona": true, "upachaya": false, "dusthana": false, "maraka": false,
+      "purushartha": "dharma",
+      "significations": [
+        "Children",
+        "Wisdom, education, intelligence",
+        "Purva Punya (past life merit)",
+        "Creativity, romance, speculation",
+        "Sacred spells, mantras, management skills",
+        "Cinema, drama, arts, falling from position"
+      ],
+      "body_parts": "Upper abdomen, stomach, liver, pancreas, spleen, gallbladder, small intestine",
+      "notes": "Trikona / Lakshmi Sthana — strong Poorva Punya house."
+    },
+    {
+      "num": 6, "sanskrit": "Ari / Ripu Bhava", "english": "House of Enemies, Debts and Diseases",
+      "tamil": "Shatru Sthānam / Roga Sthānam",
+      "natural_sign": "Virgo", "natural_ruler": "Mercury", "natural_karaka": ["Mars", "Saturn"],
+      "kendra": false, "trikona": false, "upachaya": true, "dusthana": true, "maraka": false,
+      "purushartha": "artha",
+      "significations": [
+        "Enemies, opposition, conflict",
+        "Diseases, illness",
+        "Debts, loans, obligations",
+        "Service, employment, daily work",
+        "Maternal uncle, step-mother",
+        "Strength to overcome obstacles, healing"
+      ],
+      "body_parts": "Lower abdomen, navel region, ulcers",
+      "notes": "Dusthana AND Upachaya — malefics (Mars, Saturn) can actually perform well here (defeat enemies). Karakas: Mars for litigation/debt, Saturn for chronic disease."
+    },
+    {
+      "num": 7, "sanskrit": "Yuvati / Kalatra Bhava", "english": "House of Spouse and Partnership",
+      "tamil": "Kalatra Sthānam",
+      "natural_sign": "Libra", "natural_ruler": "Venus", "natural_karaka": "Venus",
+      "kendra": true, "trikona": false, "upachaya": false, "dusthana": false, "maraka": true,
+      "purushartha": "kama",
+      "significations": [
+        "Spouse, marriage, partnerships",
+        "Public interaction, marketplace",
+        "Contracts and agreements",
+        "Loss of sight, death (maraka)"
+      ],
+      "body_parts": "Below waist, pelvic region, reproductive organs",
+      "notes": "Kendra AND Maraka — both foundational and dangerous for longevity."
+    },
+    {
+      "num": 8, "sanskrit": "Randhra Bhava", "english": "House of Longevity and Occult",
+      "tamil": "Randhra Sthanam",
+      "natural_sign": "Scorpio", "natural_ruler": "Mars", "natural_karaka": "Saturn",
+      "kendra": false, "trikona": false, "upachaya": false, "dusthana": true, "maraka": false,
+      "purushartha": "moksha",
+      "significations": [
+        "Longevity, lifespan",
+        "Occult sciences, hidden matters, research",
+        "Transformation, sudden events",
+        "Accidents, battles, mangalyam (marriage tie)",
+        "In-laws"
+      ],
+      "body_parts": "External genitalia, anus, chronic diseases",
+      "notes": "Dusthana. 8th is also Jeeva Shakti. Generally avoid for benefic placements but essential for spiritual/occult work."
+    },
+    {
+      "num": 9, "sanskrit": "Dharma Bhava", "english": "House of Fortune and Dharma",
+      "tamil": "Dharma Sthanam",
+      "natural_sign": "Sagittarius", "natural_ruler": "Jupiter", "natural_karaka": ["Sun", "Jupiter"],
+      "kendra": false, "trikona": true, "upachaya": false, "dusthana": false, "maraka": false,
+      "purushartha": "dharma",
+      "significations": [
+        "Dharma, righteousness, religion",
+        "Luck, fortune, divine blessings",
+        "Father",
+        "Higher education",
+        "Foreign journeys, long travel",
+        "Wife's brother, brother's wife"
+      ],
+      "body_parts": "Thighs, hips",
+      "notes": "Best of the Trikonas — Lakshmi Sthana. Most auspicious house for blessings."
+    },
+    {
+      "num": 10, "sanskrit": "Karma Bhava", "english": "House of Career and Status",
+      "tamil": "Karma Sthana",
+      "natural_sign": "Capricorn", "natural_ruler": "Saturn", "natural_karaka": ["Sun", "Jupiter", "Mercury", "Saturn"],
+      "kendra": true, "trikona": false, "upachaya": true, "dusthana": false, "maraka": false,
+      "purushartha": "artha",
+      "significations": [
+        "Career, profession, livelihood",
+        "Status, authority, honour",
+        "Recognition, respect, reputation",
+        "Politics, government",
+        "Pilgrimage, last rites for parents"
+      ],
+      "body_parts": "Knees, back",
+      "notes": "Kendra + Upachaya — the 'mid-heaven' house (MC). All four natural significators (Sun, Jupiter, Mercury, Saturn) apply."
+    },
+    {
+      "num": 11, "sanskrit": "Labha Bhava", "english": "House of Gains",
+      "tamil": "Labha Sthana",
+      "natural_sign": "Aquarius", "natural_ruler": "Saturn", "natural_karaka": "Jupiter",
+      "kendra": false, "trikona": false, "upachaya": true, "dusthana": false, "maraka": false,
+      "purushartha": "kama",
+      "significations": [
+        "Gains, profits, income",
+        "Fulfilment of desires",
+        "Friends, social circles",
+        "Elder siblings",
+        "Achievements, recognition"
+      ],
+      "body_parts": "Calves, legs",
+      "notes": "Upachaya — improves with age."
+    },
+    {
+      "num": 12, "sanskrit": "Vyaya Bhava", "english": "House of Loss and Liberation",
+      "tamil": "Vyaya Sthana",
+      "natural_sign": "Pisces", "natural_ruler": "Jupiter", "natural_karaka": "Saturn",
+      "kendra": false, "trikona": false, "upachaya": false, "dusthana": true, "maraka": false,
+      "purushartha": "moksha",
+      "significations": [
+        "Expenses, losses, expenditure",
+        "Moksha, liberation, renunciation",
+        "Foreign settlement, isolation, seclusion",
+        "Prisons, hospitals, confinement",
+        "History of enemies, hidden enemies"
+      ],
+      "body_parts": "Feet, sole",
+      "notes": "Dusthana — weakest for material but supports spiritual progress."
+    }
+  ],
+  "classifications": {
+    "kendra": {"houses": [1, 4, 7, 10], "name": "Angular / Quadrant / 'Four Pillars'", "deity": "Vishnu", "rule": "Planets here perform powerfully. Malefics do well. Natural benefics lose some beneficence (Kendradhipathi Dosa), malefics lose some maleficence."},
+    "trikona": {"houses": [1, 5, 9], "name": "Trines / 'Houses of Fortune'", "deity": "Lakshmi", "rule": "Most auspicious. Both benefic and malefic lords give auspicious results when they rule Trikonas."},
+    "upachaya": {"houses": [3, 6, 10, 11], "name": "Growth Houses", "rule": "Results improve over time. Malefics (Sun, Mars, Saturn, Rahu, Ketu) perform especially well."},
+    "dusthana_trika": {"houses": [6, 8, 12], "name": "Challenging Houses", "rule": "Areas of struggle. Benefics here are softened; malefics can strengthen 6th (defeating enemies)."},
+    "maraka": {"houses": [2, 7], "name": "Death-Inflicting Houses", "rule": "12th from 3rd and 8th (Jeeva Shakti). Activate in specific Dasha periods; used in longevity analysis."},
+    "trishadayadhisha": {"houses": [3, 6, 11], "name": "Evil Houses", "rule": "Lords of these houses give inauspicious results."},
+    "parashraya": {"houses": [12, 2, 8], "name": "Dependent Houses", "rule": "Results depend on association with other planets. Order of beneficence: 12 > 2 > 8. 8th lord is least auspicious alone (12th from 9th)."},
+    "panapara_succedent": {"houses": [2, 5, 8, 11], "name": "Succedent / Accumulating", "rule": "Medium strength."},
+    "apoklima_cadent": {"houses": [3, 6, 9, 12], "name": "Cadent / Declining", "rule": "Weakest (except 9th which is Trikona). 9th is the best cadent."}
+  },
+  "purushartha_groups": {
+    "dharma": [1, 5, 9],
+    "artha": [2, 6, 10],
+    "kama": [3, 7, 11],
+    "moksha": [4, 8, 12]
+  },
+  "house_lordship_principles": [
+    "Lord of 1st is always auspicious (Kendra + Trikona).",
+    "Kendra lords: benefics lose some beneficence, malefics lose some maleficence (Kendradhipathi Dosa).",
+    "Trikona lords: always auspicious (both benefic and malefic).",
+    "If a planet lords both a Kendra and a Trikona = Yogakaraka (Rajayoga).",
+    "Kendra–Trikona lord exchange/conjunction/aspect = Raja Yoga.",
+    "Kendra lord in Dusthana = Duryoga.",
+    "8th lord is inauspicious (12th from Dharma 9th), unless also owns a Trikona."
+  ],
+  "yogakarakas": [
+    {"lagna": "Taurus", "planet": "Saturn", "rules": "9th and 10th"},
+    {"lagna": "Cancer", "planet": "Mars", "rules": "5th and 10th"},
+    {"lagna": "Leo", "planet": "Mars", "rules": "4th and 9th"},
+    {"lagna": "Libra", "planet": "Saturn", "rules": "4th and 5th"},
+    {"lagna": "Capricorn", "planet": "Venus", "rules": "5th and 10th"},
+    {"lagna": "Aquarius", "planet": "Venus", "rules": "4th and 9th"}
+  ],
+  "kendradhipathi_dosa_lagnas": {
+    "applies_to_dual_signs": ["Gemini", "Virgo", "Sagittarius", "Pisces"],
+    "note": "Natural benefics ruling Kendras in these 4 dual-sign Lagnas lose their beneficence (but still remain benefic). 1st lord is exempt if it also owns a Trikona."
+  },
+  "badhaka_rule": {
+    "description": "Badhaka = the obstructing house. Rule varies by Lagna type.",
+    "movable_chara": {"lagnas": ["Aries", "Cancer", "Libra", "Capricorn"], "house": 11},
+    "fixed_sthira": {"lagnas": ["Taurus", "Leo", "Scorpio", "Aquarius"], "house": 9},
+    "dual_dwi_swabhava": {"lagnas": ["Gemini", "Virgo", "Sagittarius", "Pisces"], "house": 7},
+    "examples": {
+      "Aries": {"badhaka_sign": "Aquarius", "badhaka_lord": "Saturn"},
+      "Cancer": {"badhaka_sign": "Taurus", "badhaka_lord": "Venus"},
+      "Libra": {"badhaka_sign": "Leo", "badhaka_lord": "Sun"},
+      "Capricorn": {"badhaka_sign": "Scorpio", "badhaka_lord": "Mars"},
+      "Taurus": {"badhaka_sign": "Capricorn", "badhaka_lord": "Saturn"},
+      "Leo": {"badhaka_sign": "Aries", "badhaka_lord": "Mars"},
+      "Scorpio": {"badhaka_sign": "Cancer", "badhaka_lord": "Moon"},
+      "Aquarius": {"badhaka_sign": "Libra", "badhaka_lord": "Venus"},
+      "Gemini": {"badhaka_sign": "Sagittarius", "badhaka_lord": "Jupiter"},
+      "Virgo": {"badhaka_sign": "Pisces", "badhaka_lord": "Jupiter"},
+      "Sagittarius": {"badhaka_sign": "Gemini", "badhaka_lord": "Mercury"},
+      "Pisces": {"badhaka_sign": "Virgo", "badhaka_lord": "Mercury"}
+    }
+  },
+  "bhavat_bhavam_rule": {
+    "principle": "Examine a house by treating it as Ascendant and counting the same house-count from itself. Each house understood by the same relative house counted from itself.",
+    "chain": {
+      "1st_from_1st": 1, "2nd_from_2nd": 3, "3rd_from_3rd": 5, "4th_from_4th": 7,
+      "5th_from_5th": 9, "6th_from_6th": 11, "7th_from_7th": 1, "8th_from_8th": 3,
+      "9th_from_9th": 5, "10th_from_10th": 7, "11th_from_11th": 9, "12th_from_12th": 11
+    }
+  },
+  "chart_analysis_first_steps": [
+    "1. House Rasi — which sign occupies it",
+    "2. House Lord — the planet ruling that sign, its placement",
+    "3. Occupants — planets in the house",
+    "4. Aspects — planets aspecting the house"
+  ]
+}

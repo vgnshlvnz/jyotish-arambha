@@ -1,0 +1,278 @@
+{
+  "$schema": "jyotish-arambha/quiz/v1",
+  "description": "Per-level quiz banks. Mix of MCQ, match-the-following, and scenario-based. Pass threshold = 70%.",
+  "Q1": {
+    "level": 1,
+    "pass_threshold": 0.7,
+    "mcq": [
+      {"q": "What does Jyotish literally mean?", "choices": ["Study of the planets", "Light of God (Jyoti + Isha)", "Hindu mythology", "Calendar science"], "answer": 1},
+      {"q": "How many Vedangas are there?", "choices": ["4", "5", "6", "8"], "answer": 2},
+      {"q": "Which rishi authored Brihat Parashara Hora Shastra?", "choices": ["Jaimini", "Parashara", "Garg", "Varahamihira"], "answer": 1},
+      {"q": "Which is NOT one of the 3 Skandhas of Jyotish?", "choices": ["Siddhanta", "Hora", "Samhita", "Tantra"], "answer": 3},
+      {"q": "The earliest Zodiac (Dendera) was developed in:", "choices": ["Sumer", "Egypt", "Greece", "India"], "answer": 1},
+      {"q": "Ptolemy (who formalised horoscopic astrology) lived in:", "choices": ["Athens", "Rome", "Alexandria", "Babylon"], "answer": 2},
+      {"q": "Which Veda is considered the oldest?", "choices": ["Yajurveda", "Samaveda", "Rigveda", "Atharvaveda"], "answer": 2}
+    ],
+    "match": [
+      {
+        "title": "Match each Anga of Jyotish to its meaning",
+        "pairs": [
+          ["Jataka", "Natal astrology"],
+          ["Prasna", "Question-based astrology"],
+          ["Muhurta", "Electional (auspicious timing)"],
+          ["Nimitta", "Omens and symbols"],
+          ["Ganita", "Mathematical foundations"],
+          ["Gola", "Spherical astronomy"]
+        ]
+      }
+    ],
+    "scenario": [
+      {"q": "A student says 'astrology is just fate-telling.' Which Skandha of Jyotish specifically deals with individual birth chart interpretation?", "answer": "Hora — it is the predictive/natal branch. Siddhanta is math/astronomy, Samhita is mundane events."}
+    ]
+  },
+  "Q2": {
+    "level": 2,
+    "pass_threshold": 0.7,
+    "mcq": [
+      {"q": "Which model does Jyotish use?", "choices": ["Heliocentric", "Geocentric", "Barycentric", "Topocentric"], "answer": 1},
+      {"q": "How many degrees does each Rasi span?", "choices": ["15°", "20°", "30°", "45°"], "answer": 2},
+      {"q": "Jyotish uses which zodiac?", "choices": ["Tropical (Sayana)", "Sidereal (Nirayana)", "Draconic", "Heliocentric"], "answer": 1},
+      {"q": "Current approximate Ayanamsa value?", "choices": ["12°", "18°", "24°", "30°"], "answer": 2},
+      {"q": "Rahu and Ketu are:", "choices": ["Planets in the asteroid belt", "Mathematical points where the Moon's path crosses the ecliptic", "Moons of Saturn", "Dwarf planets"], "answer": 1},
+      {"q": "Rahu and Ketu complete one zodiacal cycle in approximately:", "choices": ["1 year", "12 years", "18.6 years", "30 years"], "answer": 2},
+      {"q": "Uttarayana is the Sun's:", "choices": ["Eastward motion", "Northward journey (Dec–June)", "Southward journey", "Retrograde phase"], "answer": 1},
+      {"q": "Which pair of planets is NOT used in Jyotish?", "choices": ["Sun and Moon", "Mars and Venus", "Rahu and Ketu", "Uranus and Neptune"], "answer": 3}
+    ],
+    "match": [
+      {
+        "title": "Match each graha to its sign(s) of ownership",
+        "pairs": [
+          ["Sun", "Leo"],
+          ["Moon", "Cancer"],
+          ["Mars", "Aries, Scorpio"],
+          ["Mercury", "Gemini, Virgo"],
+          ["Jupiter", "Sagittarius, Pisces"],
+          ["Venus", "Taurus, Libra"],
+          ["Saturn", "Capricorn, Aquarius"]
+        ]
+      }
+    ],
+    "scenario": [
+      {"q": "A Tropical astrologer computes a Sun in '0° Aries'. What sidereal position will a Jyotishi record (with ~24° ayanamsa)?", "answer": "6° Pisces (0° Aries tropical − 24° ayanamsa = 24° retrograde into Pisces, i.e. 6° Pisces sidereal)."}
+    ]
+  },
+  "Q3": {
+    "level": 3,
+    "pass_threshold": 0.7,
+    "mcq": [
+      {"q": "Span of one Nakshatra?", "choices": ["10°", "13°20'", "15°", "20°"], "answer": 1},
+      {"q": "How many Padas total across all nakshatras?", "choices": ["27", "36", "108", "360"], "answer": 2},
+      {"q": "Lord of Ashwini nakshatra?", "choices": ["Mars", "Venus", "Sun", "Ketu"], "answer": 3},
+      {"q": "Lord of Rohini nakshatra?", "choices": ["Moon", "Venus", "Mars", "Mercury"], "answer": 0},
+      {"q": "Lord of Pushya nakshatra?", "choices": ["Mercury", "Saturn", "Jupiter", "Moon"], "answer": 1},
+      {"q": "Which nakshatra is in 0° Aries?", "choices": ["Revati", "Ashwini", "Bharani", "Krittika"], "answer": 1},
+      {"q": "Janma Nakshatra is determined from:", "choices": ["Ascendant", "Sun's position", "Moon's position at birth", "Jupiter's position"], "answer": 2},
+      {"q": "Which 2 nakshatras are classified as Misra (mixed soft/sharp)?", "choices": ["Ashwini and Bharani", "Krittika and Vishakha", "Rohini and Swati", "Mula and Magha"], "answer": 1},
+      {"q": "Which group is typically AVOIDED for major undertakings?", "choices": ["Rohini and Pushya", "Hasta and Anuradha", "Moola, Ashlesha and Ardra", "Ashwini and Revati"], "answer": 2}
+    ],
+    "match": [
+      {
+        "title": "Match each Nava Tara group to its meaning",
+        "pairs": [
+          ["Janma", "Birth / nature"],
+          ["Sampat", "Wealth and prosperity"],
+          ["Vipat", "Danger and obstacles"],
+          ["Kshema", "Safety and comfort"],
+          ["Sadhaka", "Accomplishment and success"],
+          ["Naidhana", "Death-like experiences"],
+          ["Mitra", "Friend"],
+          ["Adhi-Mitra", "Best or closest friend"]
+        ]
+      }
+    ],
+    "scenario": [
+      {"q": "A baby is born with Moon in the 3rd pada of Hasta. Which planet rules that nakshatra and will start the Vimshottari Mahadasha?", "answer": "Moon is the lord of Hasta. So the native's Mahadasha sequence starts with Moon Dasha."}
+    ]
+  },
+  "Q4": {
+    "level": 4,
+    "pass_threshold": 0.7,
+    "mcq": [
+      {"q": "Exaltation sign of Sun?", "choices": ["Leo", "Aries", "Cancer", "Virgo"], "answer": 1},
+      {"q": "Debilitation sign of Jupiter?", "choices": ["Cancer", "Virgo", "Capricorn", "Scorpio"], "answer": 2},
+      {"q": "Exaltation sign of Venus?", "choices": ["Taurus", "Libra", "Pisces", "Virgo"], "answer": 2},
+      {"q": "Saturn is debilitated in:", "choices": ["Aries", "Libra", "Cancer", "Virgo"], "answer": 0},
+      {"q": "Mars special aspects are on houses:", "choices": ["3, 7, 10", "4, 7, 8", "5, 7, 9", "2, 7, 12"], "answer": 1},
+      {"q": "Jupiter special aspects are on houses:", "choices": ["3, 7, 10", "4, 7, 8", "5, 7, 9", "1, 7, 12"], "answer": 2},
+      {"q": "Saturn special aspects are on houses:", "choices": ["3, 7, 10", "4, 7, 8", "5, 7, 9", "2, 7, 11"], "answer": 0},
+      {"q": "Which is NOT a natural benefic?", "choices": ["Jupiter", "Venus", "Mars", "Full Moon"], "answer": 2},
+      {"q": "Mercury is benefic when:", "choices": ["Alone or with benefics", "With Rahu only", "Retrograde", "In Pisces"], "answer": 0},
+      {"q": "Yogakaraka planet for Cancer Lagna?", "choices": ["Jupiter", "Mars", "Venus", "Mercury"], "answer": 1},
+      {"q": "Dig Bala (directional strength) in the 10th house belongs to:", "choices": ["Moon and Venus", "Sun and Mars", "Mercury and Jupiter", "Saturn alone"], "answer": 1},
+      {"q": "Combustion orb for Jupiter?", "choices": ["10°", "11°", "14°", "17°"], "answer": 1},
+      {"q": "Which Chara Karaka is determined by the HIGHEST longitude?", "choices": ["Darakaraka", "Amatyakaraka", "Atmakaraka", "Matrikaraka"], "answer": 2}
+    ],
+    "match": [
+      {
+        "title": "Match each planet to its natural karaka domain",
+        "pairs": [
+          ["Sun", "Father, soul, power"],
+          ["Moon", "Mother, mind, emotions"],
+          ["Mars", "Siblings, courage, land"],
+          ["Mercury", "Intelligence, speech"],
+          ["Jupiter", "Wisdom, children, wealth"],
+          ["Venus", "Marriage, love, arts"],
+          ["Saturn", "Longevity, discipline, service"]
+        ]
+      },
+      {
+        "title": "Match each planet to its exaltation sign",
+        "pairs": [
+          ["Sun", "Aries"],
+          ["Moon", "Taurus"],
+          ["Mars", "Capricorn"],
+          ["Mercury", "Virgo"],
+          ["Jupiter", "Cancer"],
+          ["Venus", "Pisces"],
+          ["Saturn", "Libra"]
+        ]
+      }
+    ],
+    "scenario": [
+      {"q": "Mars is in 3° Cancer in a chart. State its dignity.", "answer": "Debilitated. Mars is debilitated in Cancer with deep debilitation at 28°. At 3° it's still within the debilitated sign — weak placement."},
+      {"q": "Jupiter at 8° Sagittarius. Dignity?", "answer": "Swakshetra (own sign). Moolatrikona range is 0°–10° in Sagittarius, so this is also Moolatrikona — very strong."}
+    ]
+  },
+  "Q5": {
+    "level": 5,
+    "pass_threshold": 0.7,
+    "mcq": [
+      {"q": "Which sign is a fixed (Sthira) water sign?", "choices": ["Cancer", "Scorpio", "Pisces", "Taurus"], "answer": 1},
+      {"q": "Which sign maps to 'Head' in Kalapurusha?", "choices": ["Pisces", "Aries", "Cancer", "Leo"], "answer": 1},
+      {"q": "Which sign has Moksha Purushartha?", "choices": ["Libra", "Scorpio", "Leo", "Gemini"], "answer": 1},
+      {"q": "Which signs are 'Fruitful'?", "choices": ["Fire signs", "Earth signs", "Water signs", "Air signs"], "answer": 2},
+      {"q": "Which is the only Ubhayodaya sign?", "choices": ["Pisces", "Gemini", "Libra", "Virgo"], "answer": 0},
+      {"q": "Which sign is both Cardinal and Earth?", "choices": ["Taurus", "Capricorn", "Virgo", "Aries"], "answer": 1},
+      {"q": "Which element has 'Preservation' as its keyword?", "choices": ["Fire", "Earth", "Air", "Water"], "answer": 1},
+      {"q": "Shirshodaya signs are strong during:", "choices": ["Dawn", "Midnight", "Daytime", "Twilight"], "answer": 2},
+      {"q": "Gemini is ruled by:", "choices": ["Venus", "Mars", "Mercury", "Moon"], "answer": 2},
+      {"q": "Chandra Lagna is:", "choices": ["Ascendant at noon", "Moon's sign treated as 1st house", "Sun's sign treated as 1st house", "Midheaven point"], "answer": 1}
+    ],
+    "match": [
+      {
+        "title": "Match each element to its 3 signs",
+        "pairs": [
+          ["Fire", "Aries, Leo, Sagittarius"],
+          ["Earth", "Taurus, Virgo, Capricorn"],
+          ["Air", "Gemini, Libra, Aquarius"],
+          ["Water", "Cancer, Scorpio, Pisces"]
+        ]
+      },
+      {
+        "title": "Match each sign to its Kalapurusha body part",
+        "pairs": [
+          ["Aries", "Head"],
+          ["Cancer", "Chest / heart"],
+          ["Leo", "Stomach"],
+          ["Libra", "Lower abdomen / pelvis"],
+          ["Scorpio", "Genitals / hidden parts"],
+          ["Capricorn", "Knees"],
+          ["Pisces", "Feet"]
+        ]
+      }
+    ],
+    "scenario": [
+      {"q": "If Lagna is Leo, what is its element, modality and purushartha?", "answer": "Fire, Fixed, Dharma."},
+      {"q": "A native has malefics in Taurus. Based on Kalapurusha, which body area is vulnerable?", "answer": "Face, neck, throat — Taurus's body region at the sign level. Add the house position for a functional overlay."}
+    ]
+  },
+  "Q6": {
+    "level": 6,
+    "pass_threshold": 0.7,
+    "mcq": [
+      {"q": "Which are the 4 Kendras?", "choices": ["1,2,3,4", "1,4,7,10", "1,5,9,12", "2,6,10,12"], "answer": 1},
+      {"q": "Trikona houses are:", "choices": ["1,5,9", "1,4,7", "3,6,11", "4,8,12"], "answer": 0},
+      {"q": "Dusthana houses are:", "choices": ["2,7", "3,6,11", "6,8,12", "4,8,12"], "answer": 2},
+      {"q": "Maraka houses are:", "choices": ["2,7", "6,12", "3,11", "8,12"], "answer": 0},
+      {"q": "Upachaya houses are:", "choices": ["1,2,3,4", "3,6,10,11", "2,5,8,11", "6,8,12"], "answer": 1},
+      {"q": "Natural karaka of the 7th house?", "choices": ["Mars", "Jupiter", "Venus", "Sun"], "answer": 2},
+      {"q": "Natural karaka of the 5th house?", "choices": ["Jupiter", "Sun", "Moon", "Mars"], "answer": 0},
+      {"q": "Yogakaraka for Libra Lagna?", "choices": ["Venus", "Mars", "Saturn", "Mercury"], "answer": 2},
+      {"q": "Badhaka for Aries Lagna?", "choices": ["Taurus", "Aquarius", "Leo", "Scorpio"], "answer": 1},
+      {"q": "Which house is BOTH Kendra and Trikona?", "choices": ["4th", "10th", "1st", "7th"], "answer": 2},
+      {"q": "Kendradhipathi Dosa applies strongly to:", "choices": ["Fire Lagnas", "Dual-sign Lagnas (Ge/Vi/Sa/Pi)", "Earth Lagnas", "Cardinal Lagnas"], "answer": 1},
+      {"q": "Bhavat Bhavam: 5th from 5th = ?", "choices": ["7th", "9th", "11th", "1st"], "answer": 1},
+      {"q": "The deity of Kendras is:", "choices": ["Lakshmi", "Shiva", "Vishnu", "Saraswati"], "answer": 2},
+      {"q": "The deity of Trikonas is:", "choices": ["Lakshmi", "Vishnu", "Durga", "Ganesha"], "answer": 0}
+    ],
+    "match": [
+      {
+        "title": "Match each house to its Sanskrit name",
+        "pairs": [
+          ["1st", "Tanu"],
+          ["2nd", "Dhana"],
+          ["3rd", "Sahaja"],
+          ["4th", "Bandhu"],
+          ["5th", "Putra"],
+          ["6th", "Ari / Ripu"],
+          ["7th", "Yuvati / Kalatra"],
+          ["8th", "Randhra"],
+          ["9th", "Dharma"],
+          ["10th", "Karma"],
+          ["11th", "Labha"],
+          ["12th", "Vyaya"]
+        ]
+      },
+      {
+        "title": "Match each Lagna to its Yogakaraka planet",
+        "pairs": [
+          ["Taurus", "Saturn"],
+          ["Cancer", "Mars"],
+          ["Leo", "Mars"],
+          ["Libra", "Saturn"],
+          ["Capricorn", "Venus"],
+          ["Aquarius", "Venus"]
+        ]
+      }
+    ],
+    "scenario": [
+      {"q": "Chart has Aries Lagna. Which sign is the 10th house, and who is the 10th lord?", "answer": "10th house is Capricorn; 10th lord is Saturn."},
+      {"q": "Chart has Virgo Lagna. Jupiter rules 4th and 7th. What does Kendradhipathi Dosa say about this Jupiter?", "answer": "Jupiter (natural benefic) lords two Kendras (4th and 7th) for a dual-sign Lagna — strongest Kendradhipathi Dosa. Jupiter loses beneficence and can actually give poor results for 4th/7th matters (home, spouse)."},
+      {"q": "Why is the 9th house called the 'best' cadent house despite being in Apoklima?", "answer": "Because it is also a Trikona (Lakshmi Sthana) — houses of fortune override their cadent weakness. It gives divine blessings and is the strongest dharma indicator."}
+    ]
+  },
+  "Q7": {
+    "level": 7,
+    "pass_threshold": 0.7,
+    "mcq": [
+      {"q": "Navamsa division size?", "choices": ["2°", "3°20'", "4°17'", "5°"], "answer": 1},
+      {"q": "Fire signs start their navamsas from:", "choices": ["Aries", "Libra", "Cancer", "Capricorn"], "answer": 0},
+      {"q": "Earth signs start their navamsas from:", "choices": ["Aries", "Libra", "Cancer", "Capricorn"], "answer": 3},
+      {"q": "Air signs start their navamsas from:", "choices": ["Aries", "Libra", "Cancer", "Capricorn"], "answer": 1},
+      {"q": "Water signs start their navamsas from:", "choices": ["Aries", "Libra", "Cancer", "Capricorn"], "answer": 2},
+      {"q": "Vargottama means:", "choices": ["Exalted in both D1 and D9", "Same sign in D1 and D9", "Debilitated in D9", "Conjunct Atmakaraka"], "answer": 1},
+      {"q": "Ashwini Pada 1 maps to which navamsa?", "choices": ["Aries", "Leo", "Sagittarius", "Pisces"], "answer": 0},
+      {"q": "Ashwini Pada 4 maps to which navamsa?", "choices": ["Aries", "Cancer", "Leo", "Libra"], "answer": 1},
+      {"q": "Primary use of D9?", "choices": ["Career", "Health", "Marriage and strength", "Children"], "answer": 2},
+      {"q": "Karakamsha is derived from:", "choices": ["D1 Lagna", "D9 sign of the Atmakaraka", "Moon's nakshatra", "Sun's house"], "answer": 1}
+    ],
+    "match": [
+      {
+        "title": "Match each pada to its navamsa sign",
+        "pairs": [
+          ["Ashwini Pd1", "Aries"],
+          ["Ashwini Pd2", "Taurus"],
+          ["Bharani Pd1", "Leo"],
+          ["Krittika Pd1", "Sagittarius"],
+          ["Rohini Pd1", "Aries"],
+          ["Pushya Pd1", "Leo"],
+          ["Ashlesha Pd4", "Pisces"]
+        ]
+      }
+    ],
+    "scenario": [
+      {"q": "A planet at 1° Aries in D1 — which navamsa sign does it fall in?", "answer": "Aries. Aries is a fire sign → navamsa starts from Aries. The first amsa (0-3°20') is Aries. Since the D1 sign is also Aries, this is VARGOTTAMA — extra strength."},
+      {"q": "A planet at 15° Taurus in D1 — which navamsa sign?", "answer": "Capricorn. Taurus (earth) starts from Capricorn. 15° is within the 5th amsa (13°20'-16°40'). 5th amsa = 5th sign from Capricorn = Taurus. Wait — let me recount: 1st=Capricorn, 2nd=Aquarius, 3rd=Pisces, 4th=Aries, 5th=Taurus. So the 5th amsa lands in Taurus = VARGOTTAMA for fixed signs at this degree band. Pattern confirmed: fixed signs are Vargottama between 13°20' and 16°40'."}
+    ]
+  }
+}

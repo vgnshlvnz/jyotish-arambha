@@ -1,0 +1,97 @@
+{
+  "$schema": "jyotish-arambha/manifest/v1",
+  "app": "Jyotish Arambha",
+  "tagline": "Beginner → Navamsa, faithful to classical Jyotisha",
+  "version": "0.1.0-ingested",
+  "sources": {
+    "root": "/home/vgnshlvnz/Downloads/Jyotish/",
+    "notes_files": [
+      "01-MODULE 1-About Astrologyv2.pdf",
+      "JA-MODULE1-24012026.pdf",
+      "02-JA-MODULE 2 - BASICS OF ASTRONOMY.pdf",
+      "02-JA-MODULE 2 - BASICS OF ASTRONOMY (1).pdf",
+      "02-MODULE 2-BASICS OF ASTRONOMY-Deckv1.pdf",
+      "4th Class - 28th Feb 2026 JA-MODULE 3 - HOROSCOPE, SIGNS & HOUSES.pdf",
+      "4th Class - 28th Feb 2026  JA-MODULE 3 - HOROSCOPE, SIGNS & HOUSES-DECK.pdf",
+      "CLASS#5-JA MODULE 4 - PLANETSv2.pdf",
+      "05-JA-MODULE 4 - PLANETS-DAY2-14032026.pdf",
+      "CLASS#8-JA MODULE 5 - SIGNSv1.pdf",
+      "01-CLASS#8-JA MODULE 5 - SIGNSv1-DAY2v2.pdf",
+      "05-JA1-MODULE 5 NOTES - SIGNS-21032026v2.pdf",
+      "01-JA1-MODULE 6-HOUSES-DAY1-04042026.pdf",
+      "02-JA1-MODULE 6-HOUSES-DAY2-V2-11042026.pdf",
+      "01-JA1-MODULE 6-HOUSES NotesV1-04042026.pdf",
+      "02-JA1-Tarabalam Table.xlsx",
+      "03-NAKSHATRA Table.xlsx",
+      "04-JA1-Navamsa CalculatorV1.pdf",
+      "JA1-Assignment#6-7-30032026-AnswerPaper.pdf",
+      "Name - JA1-Assignment#8-05042026-Answer.pdf"
+    ],
+    "author": "Bavani Shanmugam, Malaysian Astrological Society"
+  },
+  "directory_structure": {
+    "raw/": "Extracted plain-text + CSV from all source files",
+    "kb/": "Normalized knowledge base (JSON)",
+    "content/": "Learning content — curriculum, flashcards, quiz, exercises",
+    "manifest.json": "This file — top-level index"
+  },
+  "kb_files": {
+    "grahas.json": "9 Grahas: karakatwas, dignity, aspects, friendships, avasthas, yogas",
+    "rasis.json": "12 Rasis: qualities, elements, modalities, Kalapurusha body map",
+    "bhavas.json": "12 Bhavas: significations, karakas, classifications, Yogakarakas, Badhakas",
+    "nakshatras.json": "27 Nakshatras: lords, spans, 108 padas with navamsa/purushartha mapping",
+    "d9_navamsa.json": "D9 division rules, Vargottama, pada→navamsa mapping",
+    "fundamentals.json": "20 core principles that repeat across the system",
+    "glossary.json": "Canonical terminology (Sanskrit / Tamil / English)",
+    "validation.json": "30 correctness invariants"
+  },
+  "content_files": {
+    "curriculum.json": "7-level progressive curriculum + 7-day crash course",
+    "flashcards.json": "Spaced-repetition decks FC1–FC7 (~120 cards)",
+    "quiz.json": "Per-level quiz banks Q1–Q7 (MCQ + match + scenario)",
+    "exercises.json": "Chart-filling drills and 2 fully-worked assignment examples"
+  },
+  "entity_counts": {
+    "grahas": 9,
+    "rasis": 12,
+    "bhavas": 12,
+    "nakshatras": 27,
+    "nakshatra_padas": 108,
+    "d9_divisions_per_sign": 9,
+    "total_d9_divisions": 108,
+    "curriculum_levels": 7,
+    "curriculum_lessons": 52,
+    "fundamental_principles": 20,
+    "glossary_terms": 105,
+    "flashcards": 120,
+    "quiz_mcq": 86,
+    "quiz_match": 12,
+    "quiz_scenario": 13,
+    "exercises": 12,
+    "validation_invariants": 30
+  },
+  "relationship_graph": {
+    "rasi_lord": "rasis[].lord → grahas[].id",
+    "nakshatra_lord": "nakshatras[].lord → grahas[].id",
+    "pada_navamsa": "nakshatras[].padas[].navamsa_lord → grahas[].id",
+    "bhava_natural_sign": "bhavas[].natural_sign → rasis[].name",
+    "bhava_natural_ruler": "bhavas[].natural_ruler → grahas[].id (via sign lord)",
+    "bhava_karaka": "bhavas[].natural_karaka → grahas[].id",
+    "yogakaraka": "bhavas.yogakarakas[].planet → grahas[].id; .lagna → rasis[].name",
+    "badhaka": "bhavas.badhaka_rule.examples[].badhaka_lord → grahas[].id"
+  },
+  "level_unlock_dependencies": {
+    "L1": "free",
+    "L2": "pass L1 quiz (≥70%)",
+    "L3": "pass L2 quiz",
+    "L4": "pass L3 quiz",
+    "L5": "pass L4 quiz",
+    "L6": "pass L5 quiz",
+    "L7": "pass L1–L6 quizzes"
+  },
+  "next_phases": {
+    "phase_2_app_shell": "Next.js + Tailwind app reading these JSON files: lesson viewer, flashcards with SRS, quiz engine, progress tracking (localStorage)",
+    "phase_3_chart_engine": "Swiss Ephemeris integration for birth-chart + D9 generation; South-Indian + North-Indian renderers"
+  },
+  "notes": "All content is ingested from the original notes. Classical cross-checks (BPHS, Jaimini) used where the notes were ambiguous. Rasi Purushartha pattern (Aries=Dharma etc.) is standardised across modules. Rahu/Ketu exaltation uses the Taurus/Scorpio tradition from the M4 Day 2 exaltation table."
+}

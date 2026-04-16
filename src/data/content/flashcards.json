@@ -1,0 +1,173 @@
+{
+  "$schema": "jyotish-arambha/flashcards/v1",
+  "description": "Spaced-repetition flashcard deck. Tag each card with level + topic for adaptive review.",
+  "total_cards": 120,
+  "decks": {
+    "FC1": {
+      "level": 1,
+      "title": "Jyotish Foundations",
+      "cards": [
+        {"id": "FC1-01", "front": "What does 'Jyotish' mean?", "back": "Light (Jyoti) of God (Isha) — the Vedic science of the celestial lights.", "tags": ["meta"]},
+        {"id": "FC1-02", "front": "Name the 3 branches (Skandhas) of Jyotish.", "back": "Siddhanta (astronomy/math), Samhita (mundane), Hora (predictive/natal).", "tags": ["meta", "structure"]},
+        {"id": "FC1-03", "front": "Name the 6 Angas of Jyotish.", "back": "Jataka, Prasna, Muhurta, Nimitta, Ganita, Gola.", "tags": ["meta"]},
+        {"id": "FC1-04", "front": "What are the 6 Vedangas?", "back": "Siksha, Kalpa, Vyakarana, Nirukta, Chhanda, Jyotisha.", "tags": ["meta"]},
+        {"id": "FC1-05", "front": "List the 5 core building blocks of Jyotish.", "back": "9 Grahas, 12 Rasis, 12 Bhavas, 27 Nakshatras, Karakatwas.", "tags": ["meta", "core"]},
+        {"id": "FC1-06", "front": "Who authored Brihat Parashara Hora Shastra?", "back": "Rishi Parashara (foundational classical text of Jyotish).", "tags": ["meta", "text"]},
+        {"id": "FC1-07", "front": "Astrology vs Astronomy — one-word contrast?", "back": "Interpretation vs Observation.", "tags": ["meta"]},
+        {"id": "FC1-08", "front": "Which Veda is oldest?", "back": "Rigveda (composed ~1500–1200 BCE, 1,028 suktas in 10 mandalas).", "tags": ["meta"]}
+      ]
+    },
+    "FC2": {
+      "level": 2,
+      "title": "Astronomy Essentials",
+      "cards": [
+        {"id": "FC2-01", "front": "What is the Celestial Sphere?", "back": "An imaginary sphere at infinite distance concurrent with Earth; the backdrop for mapping celestial objects.", "tags": ["astronomy"]},
+        {"id": "FC2-02", "front": "What is the Ecliptic?", "back": "The apparent path of the Sun across the sky over a year; Earth's orbital plane.", "tags": ["astronomy"]},
+        {"id": "FC2-03", "front": "Zenith vs Nadir?", "back": "Zenith = directly overhead (MC). Nadir = directly below (IC). 180° apart.", "tags": ["astronomy"]},
+        {"id": "FC2-04", "front": "Tropical vs Sidereal zodiac — which does Jyotish use?", "back": "Sidereal (Nirayana) — fixed to stars, Ashwini = 0° Aries. Tropical is Sayana, season-based.", "tags": ["astronomy"]},
+        {"id": "FC2-05", "front": "What is Ayanamsa?", "back": "The angular difference between Tropical and Sidereal zodiacs. Currently ~24°. Grows ~1° every 72 years.", "tags": ["astronomy"]},
+        {"id": "FC2-06", "front": "Why are Rahu and Ketu always retrograde?", "back": "They are mathematical points (Moon's nodes), not bodies. They move backward against the zodiac at ~1 sign per 18 months.", "tags": ["astronomy", "rahu", "ketu"]},
+        {"id": "FC2-07", "front": "Bha-Chakra means?", "back": "'Shining wheel' — the zodiac belt. Bha = shine, Chakra = wheel.", "tags": ["astronomy"]},
+        {"id": "FC2-08", "front": "How large is the Zodiac belt?", "back": "360° around; ~8° north-south of the ecliptic.", "tags": ["astronomy"]},
+        {"id": "FC2-09", "front": "Uttarayana vs Dakshinayana?", "back": "Uttarayana = Sun's northward journey (Dec–June). Dakshinayana = southward (June–Dec).", "tags": ["astronomy"]},
+        {"id": "FC2-10", "front": "Why doesn't Jyotish use Neptune and Uranus?", "back": "They are too slow-moving and their tidal force on Earth is negligible.", "tags": ["astronomy"]}
+      ]
+    },
+    "FC3": {
+      "level": 3,
+      "title": "Nakshatras",
+      "cards": [
+        {"id": "FC3-01", "front": "How many degrees does one nakshatra span?", "back": "13°20' (13.333°). 360° ÷ 27 = 13°20'.", "tags": ["nakshatra"]},
+        {"id": "FC3-02", "front": "How many padas in total?", "back": "108 padas. 27 nakshatras × 4 padas each.", "tags": ["nakshatra"]},
+        {"id": "FC3-03", "front": "How many padas per rasi?", "back": "9 padas per sign. (2¼ nakshatras fit per sign.)", "tags": ["nakshatra", "rasi"]},
+        {"id": "FC3-04", "front": "Recite the Vimshottari lord cycle.", "back": "Ketu → Venus → Sun → Moon → Mars → Rahu → Jupiter → Saturn → Mercury.", "tags": ["nakshatra", "dasha"]},
+        {"id": "FC3-05", "front": "Which planet lords Ashwini?", "back": "Ketu. (Ashwini is the 1st nakshatra; the cycle starts with Ketu.)", "tags": ["nakshatra"]},
+        {"id": "FC3-06", "front": "Which planet lords Rohini?", "back": "Moon. (4th in the cycle: Ketu, Venus, Sun, Moon.)", "tags": ["nakshatra"]},
+        {"id": "FC3-07", "front": "What is Janma Nakshatra?", "back": "The nakshatra occupied by the Moon at birth. Used for naming, Dasha start, and Tarabalam.", "tags": ["nakshatra", "chart"]},
+        {"id": "FC3-08", "front": "Tarabalam groups — name them.", "back": "Janma, Sampat, Vipat, Kshema, Pratyak, Sadhaka, Naidhana, Mitra, Adhi-Mitra.", "tags": ["nakshatra", "muhurta"]},
+        {"id": "FC3-09", "front": "What are the 3 Ganas of Nakshatras?", "back": "Deva (divine, optimistic), Manushya (human, pragmatic), Rakshasa (demonic, rule-breaking).", "tags": ["nakshatra"]},
+        {"id": "FC3-10", "front": "Which 2 nakshatras are Misra (mix of soft + sharp)?", "back": "Krittika and Vishakha — both under Agni.", "tags": ["nakshatra"]},
+        {"id": "FC3-11", "front": "Purushartha cycle of nakshatra padas?", "back": "Dharma → Artha → Kama → Moksha, repeating. Pada 1 = Dharma, Pada 4 = Moksha.", "tags": ["nakshatra"]},
+        {"id": "FC3-12", "front": "What does 'Paryaya' mean?", "back": "Cycle. Refers to each of the 3 groups of 9 nakshatras (Ashwini–Ashlesha, Magha–Jyeshtha, Moola–Revati).", "tags": ["nakshatra"]}
+      ]
+    },
+    "FC4": {
+      "level": 4,
+      "title": "Grahas — Karakas, Dignity, Aspects",
+      "cards": [
+        {"id": "FC4-01", "front": "Sun's main karakas?", "back": "Self, soul, father, power, government, vitality, heart, bones.", "tags": ["graha", "sun"]},
+        {"id": "FC4-02", "front": "Moon's main karakas?", "back": "Mind, mother, emotions, public, water, home, breast/lungs/stomach.", "tags": ["graha", "moon"]},
+        {"id": "FC4-03", "front": "Mars's main karakas?", "back": "Energy, action, siblings, war, land, surgery, muscles, bone marrow.", "tags": ["graha", "mars"]},
+        {"id": "FC4-04", "front": "Mercury's main karakas?", "back": "Intelligence, communication, speech, business, nervous system, skin.", "tags": ["graha", "mercury"]},
+        {"id": "FC4-05", "front": "Jupiter's main karakas?", "back": "Wisdom, wealth, children, religion, spiritual guru, liver, fat.", "tags": ["graha", "jupiter"]},
+        {"id": "FC4-06", "front": "Venus's main karakas?", "back": "Love, marriage, women, arts, beauty, vehicles, reproductive system.", "tags": ["graha", "venus"]},
+        {"id": "FC4-07", "front": "Saturn's main karakas?", "back": "Discipline, longevity, old people, service, struggle, bones/teeth, delay.", "tags": ["graha", "saturn"]},
+        {"id": "FC4-08", "front": "Rahu's main karakas?", "back": "Illusion, obsession, foreign things, occult, addiction, sudden fame.", "tags": ["graha", "rahu"]},
+        {"id": "FC4-09", "front": "Ketu's main karakas?", "back": "Detachment, moksha, mysticism, healing, isolation, siddhas.", "tags": ["graha", "ketu"]},
+        {"id": "FC4-10", "front": "Sun — exaltation & debilitation?", "back": "Exalted in Aries 10°, debilitated in Libra 10°.", "tags": ["graha", "dignity"]},
+        {"id": "FC4-11", "front": "Moon — exaltation & debilitation?", "back": "Exalted in Taurus 3°, debilitated in Scorpio 3°.", "tags": ["graha", "dignity"]},
+        {"id": "FC4-12", "front": "Mars — exaltation & debilitation?", "back": "Exalted in Capricorn 28°, debilitated in Cancer 28°.", "tags": ["graha", "dignity"]},
+        {"id": "FC4-13", "front": "Mercury — exaltation & debilitation?", "back": "Exalted in Virgo 15°, debilitated in Pisces 15°.", "tags": ["graha", "dignity"]},
+        {"id": "FC4-14", "front": "Jupiter — exaltation & debilitation?", "back": "Exalted in Cancer 5°, debilitated in Capricorn 5°.", "tags": ["graha", "dignity"]},
+        {"id": "FC4-15", "front": "Venus — exaltation & debilitation?", "back": "Exalted in Pisces 27°, debilitated in Virgo 27°.", "tags": ["graha", "dignity"]},
+        {"id": "FC4-16", "front": "Saturn — exaltation & debilitation?", "back": "Exalted in Libra 20°, debilitated in Aries 20°.", "tags": ["graha", "dignity"]},
+        {"id": "FC4-17", "front": "Rahu & Ketu — exaltation?", "back": "Rahu exalted in Taurus 20° (some say Gemini), Ketu in Scorpio 20°. Each debilitated in opposite.", "tags": ["graha", "dignity"]},
+        {"id": "FC4-18", "front": "Mars special aspects?", "back": "4th, 7th, 8th houses from its position.", "tags": ["graha", "aspect"]},
+        {"id": "FC4-19", "front": "Jupiter special aspects?", "back": "5th, 7th, 9th houses.", "tags": ["graha", "aspect"]},
+        {"id": "FC4-20", "front": "Saturn special aspects?", "back": "3rd, 7th, 10th houses.", "tags": ["graha", "aspect"]},
+        {"id": "FC4-21", "front": "Which planets are Natural Benefics?", "back": "Waxing Moon, Mercury (alone or with benefics), Jupiter, Venus.", "tags": ["graha", "benefic"]},
+        {"id": "FC4-22", "front": "Which planets are Natural Malefics?", "back": "Sun, Saturn, Mars, Waning Moon, Rahu, Ketu.", "tags": ["graha", "malefic"]},
+        {"id": "FC4-23", "front": "Sun's Moolatrikona?", "back": "Leo 0°–20°.", "tags": ["graha", "moolatrikona"]},
+        {"id": "FC4-24", "front": "Jupiter's Moolatrikona?", "back": "Sagittarius 0°–10°.", "tags": ["graha", "moolatrikona"]},
+        {"id": "FC4-25", "front": "Saturn's Moolatrikona?", "back": "Aquarius 0°–20°.", "tags": ["graha", "moolatrikona"]},
+        {"id": "FC4-26", "front": "Dig Bala — which planets strong in 1st house?", "back": "Mercury and Jupiter (East).", "tags": ["graha", "dig-bala"]},
+        {"id": "FC4-27", "front": "Dig Bala — 10th house?", "back": "Sun and Mars (South, midday strength).", "tags": ["graha", "dig-bala"]},
+        {"id": "FC4-28", "front": "Dig Bala — 4th house?", "back": "Moon and Venus (North, night sky luminaries).", "tags": ["graha", "dig-bala"]},
+        {"id": "FC4-29", "front": "Dig Bala — 7th house?", "back": "Saturn (West, setting sun).", "tags": ["graha", "dig-bala"]},
+        {"id": "FC4-30", "front": "What is Yogakaraka?", "back": "A planet that lords BOTH a Kendra AND a Trikona for a given Lagna. Gives Raja Yoga.", "tags": ["yoga"]},
+        {"id": "FC4-31", "front": "Sun + Mercury conjunction yoga name?", "back": "Buddhi-Aditya Yoga — sharp intellect and communication.", "tags": ["yoga"]},
+        {"id": "FC4-32", "front": "Moon + Jupiter conjunction yoga name?", "back": "Gajakesari Yoga — wisdom, prosperity, respect.", "tags": ["yoga"]}
+      ]
+    },
+    "FC5": {
+      "level": 5,
+      "title": "Rasis — Signs",
+      "cards": [
+        {"id": "FC5-01", "front": "Aries — lord, element, modality, purushartha?", "back": "Mars / Fire / Cardinal / Dharma. Body: head.", "tags": ["rasi", "aries"]},
+        {"id": "FC5-02", "front": "Taurus — lord, element, modality, purushartha?", "back": "Venus / Earth / Fixed / Artha. Body: face, neck.", "tags": ["rasi", "taurus"]},
+        {"id": "FC5-03", "front": "Gemini — lord, element, modality, purushartha?", "back": "Mercury / Air / Mutable / Kama. Body: arms, shoulders.", "tags": ["rasi", "gemini"]},
+        {"id": "FC5-04", "front": "Cancer — lord, element, modality, purushartha?", "back": "Moon / Water / Cardinal / Moksha. Body: heart, chest.", "tags": ["rasi", "cancer"]},
+        {"id": "FC5-05", "front": "Leo — lord, element, modality, purushartha?", "back": "Sun / Fire / Fixed / Dharma. Body: stomach.", "tags": ["rasi", "leo"]},
+        {"id": "FC5-06", "front": "Virgo — lord, element, modality, purushartha?", "back": "Mercury / Earth / Mutable / Artha. Body: waist, intestines.", "tags": ["rasi", "virgo"]},
+        {"id": "FC5-07", "front": "Libra — lord, element, modality, purushartha?", "back": "Venus / Air / Cardinal / Kama. Body: lower abdomen.", "tags": ["rasi", "libra"]},
+        {"id": "FC5-08", "front": "Scorpio — lord, element, modality, purushartha?", "back": "Mars / Water / Fixed / Moksha. Body: genitals, hidden parts.", "tags": ["rasi", "scorpio"]},
+        {"id": "FC5-09", "front": "Sagittarius — lord, element, modality, purushartha?", "back": "Jupiter / Fire / Mutable / Dharma. Body: thighs.", "tags": ["rasi", "sagittarius"]},
+        {"id": "FC5-10", "front": "Capricorn — lord, element, modality, purushartha?", "back": "Saturn / Earth / Cardinal / Artha. Body: knees.", "tags": ["rasi", "capricorn"]},
+        {"id": "FC5-11", "front": "Aquarius — lord, element, modality, purushartha?", "back": "Saturn / Air / Fixed / Kama. Body: calves.", "tags": ["rasi", "aquarius"]},
+        {"id": "FC5-12", "front": "Pisces — lord, element, modality, purushartha?", "back": "Jupiter / Water / Mutable / Moksha. Body: feet.", "tags": ["rasi", "pisces"]},
+        {"id": "FC5-13", "front": "Name the Cardinal (Chara) signs.", "back": "Aries, Cancer, Libra, Capricorn.", "tags": ["rasi", "modality"]},
+        {"id": "FC5-14", "front": "Name the Fixed (Sthira) signs.", "back": "Taurus, Leo, Scorpio, Aquarius.", "tags": ["rasi", "modality"]},
+        {"id": "FC5-15", "front": "Name the Mutable (Dwi Swabhava) signs.", "back": "Gemini, Virgo, Sagittarius, Pisces.", "tags": ["rasi", "modality"]},
+        {"id": "FC5-16", "front": "Name the 3 Fire signs.", "back": "Aries, Leo, Sagittarius.", "tags": ["rasi", "element"]},
+        {"id": "FC5-17", "front": "Name the 3 Earth signs.", "back": "Taurus, Virgo, Capricorn.", "tags": ["rasi", "element"]},
+        {"id": "FC5-18", "front": "Name the 3 Air signs.", "back": "Gemini, Libra, Aquarius.", "tags": ["rasi", "element"]},
+        {"id": "FC5-19", "front": "Name the 3 Water signs.", "back": "Cancer, Scorpio, Pisces.", "tags": ["rasi", "element"]},
+        {"id": "FC5-20", "front": "Dharma trinity of signs?", "back": "Aries, Leo, Sagittarius (fire signs).", "tags": ["rasi", "purushartha"]},
+        {"id": "FC5-21", "front": "Fruitful signs (for progeny)?", "back": "Cancer, Scorpio, Pisces (water).", "tags": ["rasi"]},
+        {"id": "FC5-22", "front": "Barren signs?", "back": "Aries, Gemini, Leo, Virgo.", "tags": ["rasi"]},
+        {"id": "FC5-23", "front": "Shirshodaya (head-rising) signs?", "back": "Gemini, Leo, Virgo, Libra, Scorpio, Aquarius. Strong in daytime.", "tags": ["rasi"]},
+        {"id": "FC5-24", "front": "Which is the only Ubhayodaya (both-way rising) sign?", "back": "Pisces.", "tags": ["rasi"]},
+        {"id": "FC5-25", "front": "Dosha per element?", "back": "Fire=Pitta, Earth=Vata, Water=Kapha, Air=Mixed.", "tags": ["rasi", "dosha"]}
+      ]
+    },
+    "FC6": {
+      "level": 6,
+      "title": "Bhavas — Houses",
+      "cards": [
+        {"id": "FC6-01", "front": "1st Bhava — name and meaning?", "back": "Tanu Bhava — Self, body, personality, head. Natural ruler: Mars (Aries).", "tags": ["bhava"]},
+        {"id": "FC6-02", "front": "2nd Bhava — name and meaning?", "back": "Dhana Bhava — Wealth, family, speech. Natural ruler: Venus (Taurus). Karaka: Jupiter.", "tags": ["bhava"]},
+        {"id": "FC6-03", "front": "3rd Bhava — name and meaning?", "back": "Sahaja Bhava — Siblings, courage, communication. Natural ruler: Mercury. Karaka: Mars.", "tags": ["bhava"]},
+        {"id": "FC6-04", "front": "4th Bhava — name and meaning?", "back": "Bandhu/Sukha Bhava — Mother, home, happiness. Natural ruler: Moon. Karaka: Moon + Mercury.", "tags": ["bhava"]},
+        {"id": "FC6-05", "front": "5th Bhava — name and meaning?", "back": "Putra Bhava — Children, wisdom, Poorva Punya. Natural ruler: Sun. Karaka: Jupiter.", "tags": ["bhava"]},
+        {"id": "FC6-06", "front": "6th Bhava — name and meaning?", "back": "Ari/Ripu Bhava — Enemies, diseases, debts, service. Natural ruler: Mercury. Karakas: Mars, Saturn.", "tags": ["bhava"]},
+        {"id": "FC6-07", "front": "7th Bhava — name and meaning?", "back": "Yuvati/Kalatra Bhava — Spouse, partnerships. Natural ruler: Venus. Karaka: Venus.", "tags": ["bhava"]},
+        {"id": "FC6-08", "front": "8th Bhava — name and meaning?", "back": "Randhra Bhava — Longevity, occult, transformation. Natural ruler: Mars. Karaka: Saturn.", "tags": ["bhava"]},
+        {"id": "FC6-09", "front": "9th Bhava — name and meaning?", "back": "Dharma Bhava — Father, fortune, religion. Natural ruler: Jupiter. Karaka: Sun + Jupiter.", "tags": ["bhava"]},
+        {"id": "FC6-10", "front": "10th Bhava — name and meaning?", "back": "Karma Bhava — Career, status. Natural ruler: Saturn. Karakas: Sun, Jupiter, Mercury, Saturn.", "tags": ["bhava"]},
+        {"id": "FC6-11", "front": "11th Bhava — name and meaning?", "back": "Labha Bhava — Gains, friends, wishes. Natural ruler: Saturn. Karaka: Jupiter.", "tags": ["bhava"]},
+        {"id": "FC6-12", "front": "12th Bhava — name and meaning?", "back": "Vyaya Bhava — Losses, liberation, foreign. Natural ruler: Jupiter. Karaka: Saturn.", "tags": ["bhava"]},
+        {"id": "FC6-13", "front": "Kendra houses?", "back": "1, 4, 7, 10 — Angular/Vishnu Sthana. Most powerful houses.", "tags": ["bhava", "classification"]},
+        {"id": "FC6-14", "front": "Trikona houses?", "back": "1, 5, 9 — Trines/Lakshmi Sthana. Most auspicious.", "tags": ["bhava", "classification"]},
+        {"id": "FC6-15", "front": "Upachaya houses?", "back": "3, 6, 10, 11 — Growth houses. Malefics perform well.", "tags": ["bhava", "classification"]},
+        {"id": "FC6-16", "front": "Dusthana houses?", "back": "6, 8, 12 — Challenging. Generally avoid benefics here.", "tags": ["bhava", "classification"]},
+        {"id": "FC6-17", "front": "Maraka houses?", "back": "2, 7 — death-inflicting (12th from 3rd and 8th, the Jeeva Shakti houses).", "tags": ["bhava", "classification"]},
+        {"id": "FC6-18", "front": "Yogakaraka for Taurus Lagna?", "back": "Saturn — rules 9th and 10th.", "tags": ["yoga", "lagna"]},
+        {"id": "FC6-19", "front": "Yogakaraka for Cancer Lagna?", "back": "Mars — rules 5th and 10th.", "tags": ["yoga", "lagna"]},
+        {"id": "FC6-20", "front": "Yogakaraka for Libra Lagna?", "back": "Saturn — rules 4th and 5th.", "tags": ["yoga", "lagna"]},
+        {"id": "FC6-21", "front": "Yogakaraka for Aquarius Lagna?", "back": "Venus — rules 4th and 9th.", "tags": ["yoga", "lagna"]},
+        {"id": "FC6-22", "front": "Badhaka house for Movable Lagnas?", "back": "11th house.", "tags": ["bhava", "badhaka"]},
+        {"id": "FC6-23", "front": "Badhaka house for Fixed Lagnas?", "back": "9th house.", "tags": ["bhava", "badhaka"]},
+        {"id": "FC6-24", "front": "Badhaka house for Dual Lagnas?", "back": "7th house.", "tags": ["bhava", "badhaka"]},
+        {"id": "FC6-25", "front": "What is Bhavat Bhavam?", "back": "Examining a house by counting the same relative position from it. E.g. 5th from 5th = 9th.", "tags": ["bhava", "technique"]},
+        {"id": "FC6-26", "front": "First 4 steps to analyse a house?", "back": "1. House Rasi, 2. House Lord, 3. Occupants, 4. Aspects.", "tags": ["bhava", "method"]}
+      ]
+    },
+    "FC7": {
+      "level": 7,
+      "title": "Navamsa (D9)",
+      "cards": [
+        {"id": "FC7-01", "front": "What is the division size of Navamsa?", "back": "3°20' (1/9 of a 30° sign). Same as one nakshatra pada.", "tags": ["d9"]},
+        {"id": "FC7-02", "front": "D9 — fire signs start navamsa from?", "back": "Aries. (Aries, Leo, Sagittarius all start from Aries.)", "tags": ["d9"]},
+        {"id": "FC7-03", "front": "D9 — earth signs start from?", "back": "Capricorn.", "tags": ["d9"]},
+        {"id": "FC7-04", "front": "D9 — air signs start from?", "back": "Libra.", "tags": ["d9"]},
+        {"id": "FC7-05", "front": "D9 — water signs start from?", "back": "Cancer.", "tags": ["d9"]},
+        {"id": "FC7-06", "front": "What is Vargottama?", "back": "When a planet or Lagna sits in the same sign in both D1 (Rasi) and D9 (Navamsa). Extra strength.", "tags": ["d9"]},
+        {"id": "FC7-07", "front": "Primary use of D9?", "back": "Spouse/marriage analysis. Also confirms D1 planetary strength and shows dharmic path.", "tags": ["d9"]},
+        {"id": "FC7-08", "front": "Karakamsha Lagna?", "back": "The sign in D9 occupied by the Atmakaraka (highest-longitude planet). The 12th from it shows Ishta Devata.", "tags": ["d9", "jaimini"]},
+        {"id": "FC7-09", "front": "Vargottama range for movable signs?", "back": "0°00' – 3°20' (1st amsa). Cardinal = Aries, Cancer, Libra, Capricorn.", "tags": ["d9"]},
+        {"id": "FC7-10", "front": "Vargottama range for fixed signs?", "back": "13°20' – 16°40' (5th amsa).", "tags": ["d9"]},
+        {"id": "FC7-11", "front": "Vargottama range for dual signs?", "back": "26°40' – 30°00' (9th amsa).", "tags": ["d9"]}
+      ]
+    }
+  }
+}

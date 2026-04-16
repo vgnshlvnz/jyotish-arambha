@@ -1,0 +1,176 @@
+{
+  "$schema": "jyotish-arambha/exercises/v1",
+  "description": "Hands-on practice exercises derived from course assignments. Each exercise has a canonical answer and validation rules.",
+  "source": ["Assignment #6, #7, #8"],
+  "exercise_types": [
+    {
+      "type": "identify_lagna",
+      "title": "Identify Lagna from birth data",
+      "instructions": "Given DOB/time/place, identify the rising sign and its lord.",
+      "validator": "chart_engine.compute_lagna(dob, time, place)"
+    },
+    {
+      "type": "fill_chart_table",
+      "title": "Fill the planetary placement table (Assignment #8 format)",
+      "instructions": "For each planet: determine Rasi, Rasi Lord, Nakshatra, Pada, and Navamsa sign.",
+      "validator": "chart_engine.compute_placements(dob, time, place)",
+      "columns": ["Body", "Longitude", "Rasi", "Rasi Lord", "Nakshatra", "Pada", "Navamsa"]
+    },
+    {
+      "type": "classify_lagna",
+      "title": "Classify the Lagna",
+      "instructions": "For a given Lagna, state element, modality, purushartha, bhava classification, and 3 core significations.",
+      "validator": "static_answer_lookup"
+    },
+    {
+      "type": "house_lord_placement",
+      "title": "Determine house lord placements",
+      "instructions": "For each house, name the lord and state where the lord sits (house + sign).",
+      "validator": "chart_engine.compute_lordships(chart)"
+    },
+    {
+      "type": "strength_assessment",
+      "title": "Assess planetary strength",
+      "instructions": "For a given placement, state: exaltation/debilitation, moolatrikona status, dignity (deepta/svastha/mudita/shanta/deena/dhukita/vikala/kala/kopa), combust status.",
+      "validator": "strength_engine.evaluate(planet, degree, sign)"
+    },
+    {
+      "type": "identify_yogas",
+      "title": "Identify yogas in a chart",
+      "instructions": "Spot Buddhi-Aditya, Gajakesari, Guru-Chandala, Yogakaraka placement, Parivartana, Raja Yoga.",
+      "validator": "yoga_engine.detect(chart)"
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "EX1",
+      "source": "Assignment #6",
+      "title": "Full chart table — Virgo Lagna example",
+      "setup": "Lagna 21°03' Virgo, with the planets below. Fill Rasi, Rasi Lord, Nakshatra, Pada, Navamsa.",
+      "inputs": [
+        {"body": "Lagna", "longitude_sign": "Virgo", "longitude_deg": 21.05},
+        {"body": "Sun", "longitude_sign": "Gemini", "longitude_deg": 1.92},
+        {"body": "Moon", "longitude_sign": "Capricorn", "longitude_deg": 11.35},
+        {"body": "Mars", "longitude_sign": "Pisces", "longitude_deg": 23.0},
+        {"body": "Mercury", "longitude_sign": "Taurus", "longitude_deg": 8.98},
+        {"body": "Jupiter", "longitude_sign": "Pisces", "longitude_deg": 11.88},
+        {"body": "Venus", "longitude_sign": "Aries", "longitude_deg": 29.02},
+        {"body": "Saturn (R)", "longitude_sign": "Aquarius", "longitude_deg": 0.97},
+        {"body": "Rahu", "longitude_sign": "Aries", "longitude_deg": 26.52},
+        {"body": "Ketu", "longitude_sign": "Libra", "longitude_deg": 26.52}
+      ],
+      "expected_answers": [
+        {"body": "Lagna", "rasi": "Virgo", "rasi_lord": "Mercury", "nakshatra": "Hasta", "pada": 4, "navamsa": "Cancer"},
+        {"body": "Sun", "rasi": "Gemini", "rasi_lord": "Mercury", "nakshatra": "Mrigashira", "pada": 3, "navamsa": "Libra"},
+        {"body": "Moon", "rasi": "Capricorn", "rasi_lord": "Saturn", "nakshatra": "Shravana", "pada": 1, "navamsa": "Aries"},
+        {"body": "Mars", "rasi": "Pisces", "rasi_lord": "Jupiter", "nakshatra": "Revati", "pada": 2, "navamsa": "Capricorn"},
+        {"body": "Mercury", "rasi": "Taurus", "rasi_lord": "Venus", "nakshatra": "Krittika", "pada": 4, "navamsa": "Pisces"},
+        {"body": "Jupiter", "rasi": "Pisces", "rasi_lord": "Jupiter", "nakshatra": "Uttara Bhadrapada", "pada": 3, "navamsa": "Libra"},
+        {"body": "Venus", "rasi": "Aries", "rasi_lord": "Mars", "nakshatra": "Krittika", "pada": 1, "navamsa": "Sagittarius"},
+        {"body": "Saturn (R)", "rasi": "Aquarius", "rasi_lord": "Saturn", "nakshatra": "Dhanishtha", "pada": 3, "navamsa": "Libra"},
+        {"body": "Rahu", "rasi": "Aries", "rasi_lord": "Mars", "nakshatra": "Bharani", "pada": 4, "navamsa": "Scorpio"},
+        {"body": "Ketu", "rasi": "Libra", "rasi_lord": "Venus", "nakshatra": "Visakha", "pada": 2, "navamsa": "Taurus"}
+      ]
+    },
+    {
+      "id": "EX2",
+      "source": "Assignment #8",
+      "title": "Gemini Lagna — classify and find lord placements",
+      "setup": "Lagna 3°21' Gemini. Classify the Lagna and determine where each key house's lord is placed.",
+      "lagna_classification": {
+        "sign": "Gemini",
+        "element": "Air",
+        "modality": "Dwi Swabhava (dual)",
+        "purushartha": "Kama",
+        "bhava_classification": ["Kendra", "Trikona (as 1st)"],
+        "three_significations": ["Self", "Body", "Personality"]
+      },
+      "house_lord_placements": [
+        {"house": 1, "lord": "Mercury", "placement": "11th House in Aries"},
+        {"house": 2, "lord": "Moon", "placement": "12th House in Taurus"},
+        {"house": 3, "lord": "Sun", "placement": "10th House in Pisces"},
+        {"house": 5, "lord": "Venus", "placement": "11th House in Aries"},
+        {"house": 6, "lord": "Mars", "placement": "12th House in Taurus"},
+        {"house": 8, "lord": "Saturn", "placement": "11th House in Aries"},
+        {"house": 9, "lord": "Saturn", "placement": "11th House in Aries"},
+        {"house": 10, "lord": "Jupiter", "placement": "5th House in Libra"},
+        {"house": 11, "lord": "Mars", "placement": "12th House in Taurus"}
+      ]
+    }
+  ],
+  "drills": [
+    {
+      "id": "DRL-001",
+      "category": "rasi_lord",
+      "prompt": "Name the lord of Libra.",
+      "answer": "Venus"
+    },
+    {
+      "id": "DRL-002",
+      "category": "nakshatra_lord",
+      "prompt": "Lord of Shravana?",
+      "answer": "Moon"
+    },
+    {
+      "id": "DRL-003",
+      "category": "pada_navamsa",
+      "prompt": "Which navamsa does Rohini Pada 1 fall in?",
+      "answer": "Aries",
+      "reasoning": "Taurus (earth) starts D9 from Capricorn. Rohini is at 10°-23°20' Taurus. Rohini Pd1 = 10°-13°20' = 1st amsa after the 3 amsas of Krittika in Taurus = 4th amsa overall from Capricorn = Aries."
+    },
+    {
+      "id": "DRL-004",
+      "category": "exaltation",
+      "prompt": "Where is Venus exalted?",
+      "answer": "Pisces at 27°"
+    },
+    {
+      "id": "DRL-005",
+      "category": "moolatrikona",
+      "prompt": "Moolatrikona range for Sun?",
+      "answer": "Leo 0° to 20°"
+    },
+    {
+      "id": "DRL-006",
+      "category": "aspect",
+      "prompt": "Mars at 10° Aries aspects which houses?",
+      "answer": "4th, 7th, 8th from Aries — i.e., Cancer, Libra, Scorpio."
+    },
+    {
+      "id": "DRL-007",
+      "category": "lagna_class",
+      "prompt": "Classify Sagittarius Lagna.",
+      "answer": "Fire / Mutable / Dharma. Kalapurusha: thighs. Chatushpada nature (in 2nd half)."
+    },
+    {
+      "id": "DRL-008",
+      "category": "karaka",
+      "prompt": "Natural karaka for the 4th house?",
+      "answer": "Moon (mother, home) and Mercury (happiness, vehicles)."
+    },
+    {
+      "id": "DRL-009",
+      "category": "yogakaraka",
+      "prompt": "Which planet is Yogakaraka for Taurus Lagna?",
+      "answer": "Saturn — rules 9th (Trikona) and 10th (Kendra)."
+    },
+    {
+      "id": "DRL-010",
+      "category": "badhaka",
+      "prompt": "Which house is Badhaka for Pisces Lagna?",
+      "answer": "7th house (dual-sign rule). Badhaka sign = Virgo, Badhaka lord = Mercury."
+    },
+    {
+      "id": "DRL-011",
+      "category": "bhavat_bhavam",
+      "prompt": "What is the Bhavat Bhavam of the 9th house?",
+      "answer": "9th from 9th = 5th house."
+    },
+    {
+      "id": "DRL-012",
+      "category": "tarabalam",
+      "prompt": "Janma Nakshatra is Pushya. Which nakshatra is the 6th Tara (Sadhaka)?",
+      "answer": "Hasta. From Pushya, counting: 1-Pushya (Janma), 2-Ashlesha (Sampat), 3-Magha (Vipat), 4-P.Phalguni (Kshema), 5-U.Phalguni (Pratyak), 6-Hasta (Sadhaka)."
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "$schema": "jyotish-arambha/fundamentals/v1",
+  "description": "CORE PRINCIPLES that repeat across Signs, Planets, Houses and Nakshatras. These are the fundamental rules for fast mastery.",
+  "source_modules": ["M1", "M2", "M4", "M5", "M6"],
+  "principles": [
+    {
+      "id": "FP-01",
+      "title": "The Four Layers of Jyotish",
+      "category": "structure",
+      "rule": "Every horoscope interpretation sits on four stacked layers: (1) Rasi/Signs, (2) Bhavas/Houses, (3) Nakshatras, (4) Grahas/Planets.",
+      "why_it_matters": "Separates quality (sign) from domain (house) from energy (nakshatra) from agent (planet). Confusing these causes most beginner errors.",
+      "appears_in": ["M1", "M2", "M3", "M6"]
+    },
+    {
+      "id": "FP-02",
+      "title": "Signs vs Houses — never confuse",
+      "category": "structure",
+      "rule": "Signs are fixed 30° divisions of the zodiac with universal qualities. Houses rotate with time/place of birth from the Ascendant and are domains of life. A planet in a sign expresses its nature; a planet in a house influences a life area.",
+      "why_it_matters": "Same planet in Mars-in-Cancer (sign effect) vs Mars-in-4th-House (domain effect) are two different statements that combine.",
+      "appears_in": ["M3", "M5", "M6"]
+    },
+    {
+      "id": "FP-03",
+      "title": "Purushartha grouping (1-5-9, 2-6-10, 3-7-11, 4-8-12)",
+      "category": "structure",
+      "rule": "The 12 Houses group into four life-goals: Dharma (1-5-9), Artha (2-6-10), Kama (3-7-11), Moksha (4-8-12). The 12 Signs follow the same pattern starting from Aries = Dharma. Nakshatra padas also cycle Dharma→Artha→Kama→Moksha.",
+      "why_it_matters": "One memorised pattern unlocks Signs, Houses, and Nakshatra padas simultaneously.",
+      "appears_in": ["M5", "M6"]
+    },
+    {
+      "id": "FP-04",
+      "title": "Every Rasi, House, and Nakshatra has a Lord",
+      "category": "lordship",
+      "rule": "Every Sign is owned by a Graha; every House inherits its sign's lord as 'House Lord'; every Nakshatra has a Nakshatra Lord (Vimshottari cycle). The condition and placement of the Lord determines how that Sign/House/Star manifests.",
+      "why_it_matters": "You never judge a house by its occupants alone — judge it by its Lord's placement, strength, and aspects.",
+      "appears_in": ["M2", "M4", "M5", "M6"]
+    },
+    {
+      "id": "FP-05",
+      "title": "Vimshottari cycle: Ketu → Venus → Sun → Moon → Mars → Rahu → Jupiter → Saturn → Mercury",
+      "category": "lordship",
+      "rule": "The 9 Nakshatra lords repeat 3 times across 27 nakshatras in this order. Same order governs the 120-year Vimshottari Dasha.",
+      "why_it_matters": "Knowing the cycle means you can derive any nakshatra's lord from memory, and the starting Mahadasha from the Janma Nakshatra.",
+      "appears_in": ["M2", "M5"]
+    },
+    {
+      "id": "FP-06",
+      "title": "Aspect (Drishti) is universal 7th + special for Mars/Jupiter/Saturn",
+      "category": "aspects",
+      "rule": "All planets aspect the 7th from their position. Additionally: Mars aspects 4th/7th/8th; Jupiter aspects 5th/7th/9th; Saturn aspects 3rd/7th/10th. Rahu/Ketu have full aspect on 5th/7th/9th.",
+      "why_it_matters": "Aspects extend a planet's influence beyond its house. Missing a Jupiter 9th-aspect means missing a blessing.",
+      "appears_in": ["M4 Day2"]
+    },
+    {
+      "id": "FP-07",
+      "title": "Planetary Strength has 6 primary factors",
+      "category": "strength",
+      "rule": "Evaluate a planet by: (1) Exaltation/Debilitation — Uchcha/Neecha, (2) Moolatrikona, (3) Own sign (Swakshetra), (4) Directional strength (Dig Bala), (5) Friendship (natural + temporal + compound = Panchadha Maitri), (6) Avasthas (Baladi + Deeptadi). Plus conjunctions and combustion.",
+      "why_it_matters": "A planet in Leo gives wildly different results depending on these factors. Never read a placement flat.",
+      "appears_in": ["M4 Day2"]
+    },
+    {
+      "id": "FP-08",
+      "title": "Kendra (Vishnu) + Trikona (Lakshmi) = Raja Yoga",
+      "category": "yoga",
+      "rule": "Kendras (1,4,7,10) are houses of sustenance ruled by Vishnu. Trikonas (1,5,9) are houses of fortune ruled by Lakshmi. When a Kendra lord and Trikona lord are connected (exchange, conjunction, or aspect), Raja Yoga forms. A planet that lords BOTH a Kendra AND a Trikona = Yogakaraka.",
+      "why_it_matters": "This single rule is the foundation of nearly every classical success-indicating yoga.",
+      "appears_in": ["M6"]
+    },
+    {
+      "id": "FP-09",
+      "title": "Upachaya houses improve over time with malefics",
+      "category": "house-classification",
+      "rule": "3rd, 6th, 10th, 11th are Upachaya (growth) houses. Natural malefics (Sun, Mars, Saturn, Rahu, Ketu) PERFORM WELL here, against the usual rule that malefics are harmful.",
+      "why_it_matters": "Counter-intuitive: a Saturn or Mars in 3rd/6th/10th/11th is often a good placement, not a bad one.",
+      "appears_in": ["M6"]
+    },
+    {
+      "id": "FP-10",
+      "title": "Kendradhipathi Dosa — Kendra benefics lose power",
+      "category": "house-classification",
+      "rule": "When a natural benefic (Jupiter, Venus, Mercury) rules a Kendra (1, 4, 7, 10), it loses beneficence but remains benefic. Applies strongly to the 4 dual-sign Lagnas: Gemini, Virgo, Sagittarius, Pisces. 1st lord is exempt if it also owns a Trikona.",
+      "why_it_matters": "Explains why Jupiter lording Gemini's 7th or Venus lording Virgo's 2nd/7th isn't as blessing-laden as naively expected.",
+      "appears_in": ["M6"]
+    },
+    {
+      "id": "FP-11",
+      "title": "Body = Zodiac (Kalapurusha mapping)",
+      "category": "meta",
+      "rule": "The 12 Signs map onto the body from Aries (head) to Pisces (feet). The 12 Houses mirror the same mapping from Lagna onward. Both are applied when reading health.",
+      "why_it_matters": "A malefic in Taurus signals face/neck issues AT THE SIGN LEVEL — regardless of which house it falls in. The house overlay adds the functional body part.",
+      "appears_in": ["M3", "M5"]
+    },
+    {
+      "id": "FP-12",
+      "title": "Element + Modality + Purushartha fully classifies every Rasi",
+      "category": "sign-classification",
+      "rule": "12 signs = 4 elements (fire/earth/air/water) × 3 modalities (cardinal/fixed/mutable). Each element rotates through each modality once. Purushartha layers on top: Aries=Dharma, Taurus=Artha, Gemini=Kama, Cancer=Moksha, then repeat. Every sign has a unique (element, modality, purushartha) triple.",
+      "why_it_matters": "You can reconstruct any sign's core nature from these three labels alone.",
+      "appears_in": ["M5"]
+    },
+    {
+      "id": "FP-13",
+      "title": "Ascendant is the anchor — the whole chart hinges on Lagna",
+      "category": "chart-reading",
+      "rule": "Lagna (Udhaya Lagna / Janma Lagna) is the rising sign on the eastern horizon at birth. It defines house 1 and therefore every other house number. Date+time+place are all required because the Ascendant changes ~every 2 hours.",
+      "why_it_matters": "Wrong Lagna = every house wrong = every interpretation wrong. Birth time accuracy is non-negotiable.",
+      "appears_in": ["M3", "M5", "M6"]
+    },
+    {
+      "id": "FP-14",
+      "title": "Three primary Lagnas: Janma, Chandra, Surya",
+      "category": "chart-reading",
+      "rule": "Jyotish routinely analyses three reference Lagnas: Janma Lagna (rising sign), Chandra Lagna (Moon's sign treated as 1st), and Surya Lagna (Sun's sign treated as 1st). Predictions cross-check all three.",
+      "why_it_matters": "Moon Rasi (not Sun) drives daily Jyotish forecasts and marriage matching. A beginner who only uses Lagna misses half the signal.",
+      "appears_in": ["M3", "M5"]
+    },
+    {
+      "id": "FP-15",
+      "title": "D9 Navamsa confirms planetary strength and spouse",
+      "category": "divisional",
+      "rule": "Each sign is divided into 9 amsas of 3°20' each (matching one nakshatra pada). The sign each amsa maps to gives the D9 chart. Vargottama = same sign in D1 and D9 (extra strength). Pushkara Navamsa = specific auspicious degrees. D9 is analyzed for marriage, planet strength, and dharma/spirituality.",
+      "why_it_matters": "A planet strong in D1 but weak in D9 will fail to deliver results. A debilitated planet in D1 that becomes exalted in D9 can still deliver.",
+      "appears_in": ["M3", "M5"]
+    },
+    {
+      "id": "FP-16",
+      "title": "Natural vs Functional nature of planets",
+      "category": "strength",
+      "rule": "Natural nature = fixed (Jupiter/Venus/Mercury/full Moon = benefic; Sun/Saturn/Mars/waning Moon/Rahu/Ketu = malefic). Functional nature = depends on which houses the planet lords for a given Lagna. A natural benefic can become functionally malefic (e.g., Venus for Gemini Lagna) and vice versa.",
+      "why_it_matters": "You cannot say 'Jupiter is always good' — for a Capricorn Lagna, Jupiter lords 3rd and 12th and is functionally malefic.",
+      "appears_in": ["M4", "M6"]
+    },
+    {
+      "id": "FP-17",
+      "title": "Bhavat Bhavam — every house can be re-read as its own Lagna",
+      "category": "chart-reading",
+      "rule": "To deepen a house analysis, treat that house as the 1st house and count the same relative position from it. 2nd-from-2nd = 3rd; 5th-from-5th = 9th; 7th-from-7th = 1st; etc.",
+      "why_it_matters": "Reveals secondary indicators the Lagna-based reading misses. E.g., the 9th house (blessings for children) is the 5th-from-5th.",
+      "appears_in": ["M6"]
+    },
+    {
+      "id": "FP-18",
+      "title": "Nine-fold planetary relationship (Panchadha Maitri)",
+      "category": "strength",
+      "rule": "Combine Natural (Naisargika) friendship with Temporal (Tatkalika) friendship to get Compound (Panchadha) friendship — 5 levels: Adhi-Mitra, Mitra, Sama, Satru, Adhi-Satru. Tatkalika rule: planets in 2/3/4/10/11/12 from each other are temporal friends; 1/5/6/7/8/9 are enemies.",
+      "why_it_matters": "A 'natural friend' can become a bitter enemy in a specific chart due to placement — and that determines results.",
+      "appears_in": ["M4 Day2"]
+    },
+    {
+      "id": "FP-19",
+      "title": "Combustion weakens planets close to the Sun",
+      "category": "strength",
+      "rule": "A planet in the same sign as Sun and within a certain orb becomes Astanga (combust): Moon 12°, Mars 17°, Mercury 14° (12° retrograde), Jupiter 11°, Venus 10° (8° retrograde), Saturn 15°.",
+      "why_it_matters": "Combust planets give only superficial results regardless of dignity. Especially critical for Venus/Mercury which spend much time near the Sun.",
+      "appears_in": ["M4 Day2"]
+    },
+    {
+      "id": "FP-20",
+      "title": "Nakshatra Gunas classified in 3 levels (R/T/S)",
+      "category": "nakshatra",
+      "rule": "27 Nakshatras split into 3 groups of 9 (Rajas/Tamas/Satva). Each group of 9 splits into 3 groups of 3 (again R/T/S). At the 3rd level each nakshatra gets its individual R/T/S. Result: every nakshatra has a 3-letter guna code (e.g. Ashwini = RRR, Revati = SSS).",
+      "why_it_matters": "Guna dominance predicts the motivation/tendency of the nakshatra — visible in Gana (Deva/Manushya/Rakshasa) used for marriage compatibility.",
+      "appears_in": ["M5"]
+    }
+  ]
+}

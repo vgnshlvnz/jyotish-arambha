@@ -1,0 +1,1084 @@
+{
+  "$schema": "jyotish-arambha/nakshatras/v1",
+  "description": "27 Nakshatras with lords, padas, rasi/navamsa mapping",
+  "source": [
+    "Module 2",
+    "Nakshatra Table CSV"
+  ],
+  "lord_cycle": [
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury"
+  ],
+  "lord_cycle_note": "Vimshottari Dasha sequence. Cycle of 9 lords repeats 3 times over 27 nakshatras.",
+  "span_per_nakshatra_deg": "13\u00b020' (13.3333\u00b0)",
+  "span_per_pada_deg": "3\u00b020' (3.3333\u00b0)",
+  "total_padas": 108,
+  "rasi_purushartha_pattern": [
+    "Dharma",
+    "Artha",
+    "Kama",
+    "Moksha"
+  ],
+  "nakshatras": [
+    {
+      "num": 1,
+      "name": "Ashwini",
+      "tamil": "Aswini",
+      "lord": "Ketu",
+      "start_deg": 0.0,
+      "end_deg": 13.3333,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 1,
+          "rasi": "Aries",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Mars",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 2,
+          "rasi": "Aries",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Venus",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 3,
+          "rasi": "Aries",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 4,
+          "rasi": "Aries",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Moon",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "name": "Bharani",
+      "tamil": "Bharani",
+      "lord": "Venus",
+      "start_deg": 13.3333,
+      "end_deg": 26.6667,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 5,
+          "rasi": "Aries",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Sun",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 6,
+          "rasi": "Aries",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 7,
+          "rasi": "Aries",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Venus",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 8,
+          "rasi": "Aries",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Mars",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "name": "Krittika",
+      "tamil": "Karthigai",
+      "lord": "Sun",
+      "start_deg": 26.6667,
+      "end_deg": 40.0,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 9,
+          "rasi": "Aries",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 10,
+          "rasi": "Taurus",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 11,
+          "rasi": "Taurus",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 12,
+          "rasi": "Taurus",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "name": "Rohini",
+      "tamil": "Rohini",
+      "lord": "Moon",
+      "start_deg": 40.0,
+      "end_deg": 53.3333,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 13,
+          "rasi": "Taurus",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Mars",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 14,
+          "rasi": "Taurus",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Venus",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 15,
+          "rasi": "Taurus",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 16,
+          "rasi": "Taurus",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Moon",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "name": "Mrigashira",
+      "tamil": "Mrigasheersham",
+      "lord": "Mars",
+      "start_deg": 53.3333,
+      "end_deg": 66.6667,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 17,
+          "rasi": "Taurus",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Sun",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 18,
+          "rasi": "Taurus",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 19,
+          "rasi": "Gemini",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Venus",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 20,
+          "rasi": "Gemini",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Mars",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "name": "Ardra",
+      "tamil": "Thiruvaathirai",
+      "lord": "Rahu",
+      "start_deg": 66.6667,
+      "end_deg": 80.0,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 21,
+          "rasi": "Gemini",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 22,
+          "rasi": "Gemini",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 23,
+          "rasi": "Gemini",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 24,
+          "rasi": "Gemini",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "name": "Punarvasu",
+      "tamil": "Poonarpoosam",
+      "lord": "Jupiter",
+      "start_deg": 80.0,
+      "end_deg": 93.3333,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 25,
+          "rasi": "Gemini",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Mars",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 26,
+          "rasi": "Gemini",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Venus",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 27,
+          "rasi": "Gemini",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 28,
+          "rasi": "Cancer",
+          "rasi_lord": "Moon",
+          "navamsa_lord": "Moon",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "name": "Pushya",
+      "tamil": "Poosam",
+      "lord": "Saturn",
+      "start_deg": 93.3333,
+      "end_deg": 106.6667,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 29,
+          "rasi": "Cancer",
+          "rasi_lord": "Moon",
+          "navamsa_lord": "Sun",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 30,
+          "rasi": "Cancer",
+          "rasi_lord": "Moon",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 31,
+          "rasi": "Cancer",
+          "rasi_lord": "Moon",
+          "navamsa_lord": "Venus",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 32,
+          "rasi": "Cancer",
+          "rasi_lord": "Moon",
+          "navamsa_lord": "Mars",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "name": "Ashlesha",
+      "tamil": "Aayilyam",
+      "lord": "Mercury",
+      "start_deg": 106.6667,
+      "end_deg": 120.0,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 33,
+          "rasi": "Cancer",
+          "rasi_lord": "Moon",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 34,
+          "rasi": "Cancer",
+          "rasi_lord": "Moon",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 35,
+          "rasi": "Cancer",
+          "rasi_lord": "Moon",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 36,
+          "rasi": "Cancer",
+          "rasi_lord": "Moon",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "name": "Magha",
+      "tamil": "Makam",
+      "lord": "Ketu",
+      "start_deg": 120.0,
+      "end_deg": 133.3333,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 37,
+          "rasi": "Leo",
+          "rasi_lord": "Sun",
+          "navamsa_lord": "Mars",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 38,
+          "rasi": "Leo",
+          "rasi_lord": "Sun",
+          "navamsa_lord": "Venus",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 39,
+          "rasi": "Leo",
+          "rasi_lord": "Sun",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 40,
+          "rasi": "Leo",
+          "rasi_lord": "Sun",
+          "navamsa_lord": "Moon",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "name": "Purva Phalguni",
+      "tamil": "Pooram",
+      "lord": "Venus",
+      "start_deg": 133.3333,
+      "end_deg": 146.6667,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 41,
+          "rasi": "Leo",
+          "rasi_lord": "Sun",
+          "navamsa_lord": "Sun",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 42,
+          "rasi": "Leo",
+          "rasi_lord": "Sun",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 43,
+          "rasi": "Leo",
+          "rasi_lord": "Sun",
+          "navamsa_lord": "Venus",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 44,
+          "rasi": "Leo",
+          "rasi_lord": "Sun",
+          "navamsa_lord": "Mars",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "name": "Uttara Phalguni",
+      "tamil": "Uthiram",
+      "lord": "Sun",
+      "start_deg": 146.6667,
+      "end_deg": 160.0,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 45,
+          "rasi": "Leo",
+          "rasi_lord": "Sun",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 46,
+          "rasi": "Virgo",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 47,
+          "rasi": "Virgo",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 48,
+          "rasi": "Virgo",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "name": "Hasta",
+      "tamil": "Hastham",
+      "lord": "Moon",
+      "start_deg": 160.0,
+      "end_deg": 173.3333,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 49,
+          "rasi": "Virgo",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Mars",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 50,
+          "rasi": "Virgo",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Venus",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 51,
+          "rasi": "Virgo",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 52,
+          "rasi": "Virgo",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Moon",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "name": "Chitra",
+      "tamil": "Chithirai",
+      "lord": "Mars",
+      "start_deg": 173.3333,
+      "end_deg": 186.6667,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 53,
+          "rasi": "Virgo",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Sun",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 54,
+          "rasi": "Virgo",
+          "rasi_lord": "Mercury",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 55,
+          "rasi": "Libra",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Venus",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 56,
+          "rasi": "Libra",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Mars",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 15,
+      "name": "Swati",
+      "tamil": "Swaathi",
+      "lord": "Rahu",
+      "start_deg": 186.6667,
+      "end_deg": 200.0,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 57,
+          "rasi": "Libra",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 58,
+          "rasi": "Libra",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 59,
+          "rasi": "Libra",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 60,
+          "rasi": "Libra",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 16,
+      "name": "Visakha",
+      "tamil": "Vishaakam",
+      "lord": "Jupiter",
+      "start_deg": 200.0,
+      "end_deg": 213.3333,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 61,
+          "rasi": "Libra",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Mars",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 62,
+          "rasi": "Libra",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Venus",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 63,
+          "rasi": "Libra",
+          "rasi_lord": "Venus",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 64,
+          "rasi": "Scorpio",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Moon",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 17,
+      "name": "Anuradha",
+      "tamil": "Anusham",
+      "lord": "Saturn",
+      "start_deg": 213.3333,
+      "end_deg": 226.6667,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 65,
+          "rasi": "Scorpio",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Sun",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 66,
+          "rasi": "Scorpio",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 67,
+          "rasi": "Scorpio",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Venus",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 68,
+          "rasi": "Scorpio",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Mars",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 18,
+      "name": "Jyeshtha",
+      "tamil": "Kettai",
+      "lord": "Mercury",
+      "start_deg": 226.6667,
+      "end_deg": 240.0,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 69,
+          "rasi": "Scorpio",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 70,
+          "rasi": "Scorpio",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 71,
+          "rasi": "Scorpio",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 72,
+          "rasi": "Scorpio",
+          "rasi_lord": "Mars",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 19,
+      "name": "Moola",
+      "tamil": "Moolam",
+      "lord": "Ketu",
+      "start_deg": 240.0,
+      "end_deg": 253.3333,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 73,
+          "rasi": "Sagittarius",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Mars",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 74,
+          "rasi": "Sagittarius",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Venus",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 75,
+          "rasi": "Sagittarius",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 76,
+          "rasi": "Sagittarius",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Moon",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 20,
+      "name": "Purva Ashada",
+      "tamil": "Pooraadam",
+      "lord": "Venus",
+      "start_deg": 253.3333,
+      "end_deg": 266.6667,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 77,
+          "rasi": "Sagittarius",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Sun",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 78,
+          "rasi": "Sagittarius",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 79,
+          "rasi": "Sagittarius",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Venus",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 80,
+          "rasi": "Sagittarius",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Mars",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 21,
+      "name": "Uttara Ashada",
+      "tamil": "Uthiraadam",
+      "lord": "Sun",
+      "start_deg": 266.6667,
+      "end_deg": 280.0,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 81,
+          "rasi": "Sagittarius",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 82,
+          "rasi": "Capricorn",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 83,
+          "rasi": "Capricorn",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 84,
+          "rasi": "Capricorn",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 22,
+      "name": "Shravana",
+      "tamil": "Thiruvonam",
+      "lord": "Moon",
+      "start_deg": 280.0,
+      "end_deg": 293.3333,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 85,
+          "rasi": "Capricorn",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Mars",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 86,
+          "rasi": "Capricorn",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Venus",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 87,
+          "rasi": "Capricorn",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 88,
+          "rasi": "Capricorn",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Moon",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 23,
+      "name": "Dhanishtha",
+      "tamil": "Avittam",
+      "lord": "Mars",
+      "start_deg": 293.3333,
+      "end_deg": 306.6667,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 89,
+          "rasi": "Capricorn",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Sun",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 90,
+          "rasi": "Capricorn",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 91,
+          "rasi": "Aquarius",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Venus",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 92,
+          "rasi": "Aquarius",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Mars",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 24,
+      "name": "Shatabisha",
+      "tamil": "Sadayam",
+      "lord": "Rahu",
+      "start_deg": 306.6667,
+      "end_deg": 320.0,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 93,
+          "rasi": "Aquarius",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 94,
+          "rasi": "Aquarius",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 95,
+          "rasi": "Aquarius",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 96,
+          "rasi": "Aquarius",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 25,
+      "name": "Purva Bhadrapada",
+      "tamil": "Poorattathi",
+      "lord": "Jupiter",
+      "start_deg": 320.0,
+      "end_deg": 333.3333,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 97,
+          "rasi": "Aquarius",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Mars",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 98,
+          "rasi": "Aquarius",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Venus",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 99,
+          "rasi": "Aquarius",
+          "rasi_lord": "Saturn",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 100,
+          "rasi": "Pisces",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Moon",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 26,
+      "name": "Uttara Bhadrapada",
+      "tamil": "Uthirattathi",
+      "lord": "Saturn",
+      "start_deg": 333.3333,
+      "end_deg": 346.6667,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 101,
+          "rasi": "Pisces",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Sun",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 102,
+          "rasi": "Pisces",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Mercury",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 103,
+          "rasi": "Pisces",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Venus",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 104,
+          "rasi": "Pisces",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Mars",
+          "purushartha": "Moksha"
+        }
+      ]
+    },
+    {
+      "num": 27,
+      "name": "Revati",
+      "tamil": "Revathi",
+      "lord": "Mercury",
+      "start_deg": 346.6667,
+      "end_deg": 360.0,
+      "span_deg": 13.3333,
+      "padas": [
+        {
+          "num": 105,
+          "rasi": "Pisces",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Dharma"
+        },
+        {
+          "num": 106,
+          "rasi": "Pisces",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Artha"
+        },
+        {
+          "num": 107,
+          "rasi": "Pisces",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Saturn",
+          "purushartha": "Kama"
+        },
+        {
+          "num": 108,
+          "rasi": "Pisces",
+          "rasi_lord": "Jupiter",
+          "navamsa_lord": "Jupiter",
+          "purushartha": "Moksha"
+        }
+      ]
+    }
+  ]
+}
