@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { manifest } from "@/lib/kb";
-import { content } from "@/lib/kb";
-import { getDict } from "@/i18n/server";
+import { manifest, content } from "@/lib/kb";
+import { getDict, getLang } from "@/i18n/server";
+import { pickLevelTitle, pickLevelSubtitle } from "@/i18n/dict";
 
 export default function HomePage() {
   const t = getDict();
+  const lang = getLang();
   const counts = (manifest as any).entity_counts;
 
   return (
@@ -28,9 +29,9 @@ export default function HomePage() {
                 <span className="text-xs text-ink-300">{lvl.estimated_minutes} {t.common.min}</span>
               </div>
               <h3 className="text-lg font-semibold text-ink-100 group-hover:text-gold-200 transition-colors">
-                {lvl.title}
+                {pickLevelTitle(lvl.level, lang)}
               </h3>
-              <p className="text-sm text-ink-300 mt-1">{lvl.subtitle}</p>
+              <p className="text-sm text-ink-300 mt-1">{pickLevelSubtitle(lvl.level, lang)}</p>
               <div className="mt-3 text-xs text-ink-300">
                 {lvl.lessons.length} {t.common.lessons}
               </div>

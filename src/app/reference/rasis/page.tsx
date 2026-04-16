@@ -1,6 +1,6 @@
 import { kb } from "@/lib/kb";
 import { getDict, getLang } from "@/i18n/server";
-import { pickName } from "@/i18n/dict";
+import { pickName, pickProp } from "@/i18n/dict";
 
 const elementColor: Record<string, string> = {
   fire: "text-orange-300 border-orange-400/30",
@@ -40,10 +40,10 @@ export default function RasisPage() {
                 </div>
               </div>
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className={"chip border " + (elementColor[r.element] ?? "")}>{r.element}</span>
-                <span className="chip">{r.modality}</span>
-                <span className="chip">{r.purushartha}</span>
-                <span className="chip">{r.gender}</span>
+                <span className={"chip border " + (elementColor[r.element] ?? "")}>{pickProp("element", r.element, lang)}</span>
+                <span className="chip">{pickProp("modality", r.modality, lang)}</span>
+                <span className="chip">{pickProp("purushartha", r.purushartha, lang)}</span>
+                <span className="chip">{pickProp("gender", r.gender, lang)}</span>
               </div>
               <p className="text-sm text-ink-200 mb-2">{r.description}</p>
               <div className="text-xs text-ink-300 space-y-0.5">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getDict } from "@/i18n/server";
-import { LangSwitcher } from "@/i18n/client";
+import { LangSwitcher, MobileMenu } from "@/i18n/client";
 
 export function Nav() {
   const t = getDict();
@@ -15,12 +15,14 @@ export function Nav() {
 
   return (
     <nav className="sticky top-0 z-50 bg-ink-900/80 backdrop-blur border-b border-ink-600">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3 flex-wrap">
-        <Link href="/" className="flex items-center gap-2 font-serif text-lg">
+      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-2">
+        <Link href="/" className="flex items-center gap-2 font-serif text-lg shrink-0">
           <span className="text-gold-300">🔱</span>
           <span className="text-gold-200">{t.home.title}</span>
         </Link>
-        <ul className="flex items-center gap-1 text-sm">
+
+        {/* Desktop nav */}
+        <ul className="hidden md:flex items-center gap-1 text-sm">
           {links.map((l) => (
             <li key={l.href}>
               <Link
@@ -32,7 +34,12 @@ export function Nav() {
             </li>
           ))}
         </ul>
-        <LangSwitcher />
+
+        <div className="flex items-center gap-2">
+          <LangSwitcher />
+          {/* Mobile hamburger — client component */}
+          <MobileMenu linksJson={JSON.stringify(links)} />
+        </div>
       </div>
     </nav>
   );

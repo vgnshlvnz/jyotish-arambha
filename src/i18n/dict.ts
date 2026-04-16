@@ -490,6 +490,137 @@ export const names = {
   } as Record<string, { en: string; ta: string }>,
 };
 
+// Curriculum level titles + subtitles + lesson titles
+export const levels: Record<number, { en: { title: string; subtitle: string }; ta: { title: string; subtitle: string } }> = {
+  1: { en: { title: "What is Jyotish?", subtitle: "Origins, branches, and the language of light" }, ta: { title: "ஜோதிடம் என்றால் என்ன?", subtitle: "தோற்றம், கிளைகள், ஒளியின் மொழி" } },
+  2: { en: { title: "Astronomy Foundations", subtitle: "The sky, the zodiac belt, and celestial mechanics" }, ta: { title: "வானியல் அடிப்படைகள்", subtitle: "வானம், ராசி வட்டம், வான இயக்கவியல்" } },
+  3: { en: { title: "The 27 Nakshatras", subtitle: "Lunar mansions, padas, and the Vimshottari cycle" }, ta: { title: "27 நட்சத்திரங்கள்", subtitle: "சந்திர மாளிகைகள், பாதங்கள், விம்சோத்தரி சுழற்சி" } },
+  4: { en: { title: "The 9 Grahas — Deep Dive", subtitle: "Karakatwas, dignity, friendships, and aspects" }, ta: { title: "9 கிரகங்கள் — ஆழ்ந்த பார்வை", subtitle: "காரகத்துவம், பலம், நட்பு, பார்வை" } },
+  5: { en: { title: "The 12 Rasis (Signs)", subtitle: "Qualities, elements, and the Kalapurusha mapping" }, ta: { title: "12 ராசிகள்", subtitle: "குணங்கள், பூதங்கள், காலபுருஷ உடல் வரைபடம்" } },
+  6: { en: { title: "The 12 Bhavas & Chart Reading", subtitle: "Domains of life, classifications, and Raja Yoga" }, ta: { title: "12 பாவங்கள் & ஜாதக வாசிப்பு", subtitle: "வாழ்க்கைத் துறைகள், வகைப்பாடுகள், ராஜயோகம்" } },
+  7: { en: { title: "Navamsa (D9) — Unlock", subtitle: "The 9th division: marriage, strength, and dharma" }, ta: { title: "நவாம்சம் (D9) — திறப்பு", subtitle: "9-வது பிரிவு: திருமணம், பலம், தர்மம்" } },
+};
+
+export const lessonTitles: Record<string, { en: string; ta: string }> = {
+  "L1.1": { en: "Astrology vs Astronomy", ta: "ஜோதிடம் vs வானியல்" },
+  "L1.2": { en: "Origins — from Sumer to India", ta: "தோற்றம் — சுமேரியாவிலிருந்து இந்தியா வரை" },
+  "L1.3": { en: "Three Branches (Skandha Trayam)", ta: "மூன்று கிளைகள் (ஸ்கந்த த்ரயம்)" },
+  "L1.4": { en: "Six Angas of Jyotish", ta: "ஜோதிடத்தின் ஆறு அங்கங்கள்" },
+  "L1.5": { en: "The 5 Core Building Blocks", ta: "5 அடிப்படை கட்டமைப்புகள்" },
+  "L2.1": { en: "Geocentric vs Heliocentric", ta: "புவிமைய vs சூரிய மைய" },
+  "L2.2": { en: "The Celestial Sphere", ta: "வான கோளம்" },
+  "L2.3": { en: "The Zodiac Belt (Bha-Chakra)", ta: "ராசி வட்டம் (பா-சக்ரம்)" },
+  "L2.4": { en: "Tropical vs Sidereal + Ayanamsa", ta: "சாயன vs நிராயண + அயனாம்சம்" },
+  "L2.5": { en: "The 9 Grahas — an overview", ta: "9 கிரகங்கள் — கண்ணோட்டம்" },
+  "L2.6": { en: "Rahu and Ketu — the lunar nodes", ta: "ராகு மற்றும் கேது — சந்திர முனைகள்" },
+  "L3.1": { en: "Why 27 Nakshatras?", ta: "ஏன் 27 நட்சத்திரங்கள்?" },
+  "L3.2": { en: "Padas — the quarter divisions", ta: "பாதங்கள் — கால் பிரிவுகள்" },
+  "L3.3": { en: "The Vimshottari Lord Cycle", ta: "விம்சோத்தரி அதிபதி சுழற்சி" },
+  "L3.4": { en: "Pariyaya — 3 groups of 9", ta: "பரியாயம் — 9-ன் 3 குழுக்கள்" },
+  "L3.5": { en: "Nakshatra classifications", ta: "நட்சத்திர வகைப்பாடுகள்" },
+  "L3.6": { en: "Janma Nakshatra and Tarabalam", ta: "ஜன்ம நட்சத்திரம் மற்றும் தாரா பலம்" },
+  "L4.1": { en: "Karakatwas — what each planet signifies", ta: "காரகத்துவம் — ஒவ்வொரு கிரகமும் குறிப்பது" },
+  "L4.2": { en: "The Planetary Cabinet", ta: "கிரக அமைச்சரவை" },
+  "L4.3": { en: "Gender, Guna, Element, Varna, Direction", ta: "பாலினம், குணம், பூதம், வர்ணம், திசை" },
+  "L4.4": { en: "Sign Ownership (Rasi Swami)", ta: "ராசி ஆதிபத்யம் (ராசி சுவாமி)" },
+  "L4.5": { en: "Exaltation and Debilitation", ta: "உச்சம் மற்றும் நீசம்" },
+  "L4.6": { en: "Moolatrikona and Swakshetra", ta: "மூலத்திரிகோணம் மற்றும் ஸ்வக்ஷேத்ரம்" },
+  "L4.7": { en: "Planetary Friendship (Naisargika Maitri)", ta: "கிரக நட்பு (நைசர்கிக மைத்ரி)" },
+  "L4.8": { en: "Directional Strength (Dig Bala)", ta: "திசை பலம் (திக் பலம்)" },
+  "L4.9": { en: "Aspects (Drishti)", ta: "பார்வை (திருஷ்டி)" },
+  "L4.10": { en: "Conjunctions and Combustion", ta: "சேர்க்கை மற்றும் அஸ்தமனம்" },
+  "L4.11": { en: "Avasthas — planetary states", ta: "அவஸ்தைகள் — கிரக நிலைகள்" },
+  "L5.1": { en: "The 12 Signs and Their Lords", ta: "12 ராசிகள் மற்றும் அதிபதிகள்" },
+  "L5.2": { en: "Four Elements (Tattvas)", ta: "நான்கு பூதங்கள் (தத்வங்கள்)" },
+  "L5.3": { en: "Three Modalities (Qualities)", ta: "மூன்று குணங்கள் (சர/ஸ்திர/த்விஸ்வபாவ)" },
+  "L5.4": { en: "Purushartha Mapping", ta: "புருஷார்த்த வரைபடம்" },
+  "L5.5": { en: "Gender, Varna, Direction", ta: "பாலினம், வர்ணம், திசை" },
+  "L5.6": { en: "Body Mapping (Kalapurusha)", ta: "உடல் வரைபடம் (காலபுருஷ)" },
+  "L5.7": { en: "Functional Classifications", ta: "செயல்பாட்டு வகைப்பாடுகள்" },
+  "L5.8": { en: "Doshas per Sign", ta: "ராசி வாரியான தோஷங்கள்" },
+  "L5.9": { en: "Three Lagnas: Janma, Chandra, Surya", ta: "மூன்று லக்னங்கள்: ஜன்ம, சந்திர, சூரிய" },
+  "L6.1": { en: "Signs vs Houses", ta: "ராசிகள் vs பாவங்கள்" },
+  "L6.2": { en: "The 12 Houses — significations", ta: "12 பாவங்கள் — குறிப்பீடுகள்" },
+  "L6.3": { en: "Natural Karakas for Houses", ta: "பாவ இயற்கை காரகர்கள்" },
+  "L6.4": { en: "Kendra, Trikona, Upachaya, Dusthana", ta: "கேந்திரம், திரிகோணம், உபசய, துஷ்டானம்" },
+  "L6.5": { en: "House Lordship (Athipathi)", ta: "பாவ ஆதிபத்யம் (அதிபதி)" },
+  "L6.6": { en: "Yogakaraka and Raja Yoga", ta: "யோககாரக மற்றும் ராஜயோகம்" },
+  "L6.7": { en: "Kendradhipathi Dosa", ta: "கேந்திராதிபத்ய தோஷம்" },
+  "L6.8": { en: "Badhaka — the obstructing house", ta: "பாதக — தடுக்கும் வீடு" },
+  "L6.9": { en: "Bhavat Bhavam & Dispositors", ta: "பாவாத் பாவம் & நாதன்" },
+  "L6.10": { en: "First Steps to Analyse a Chart", ta: "ஜாதகத்தை ஆராயும் முதல் படிகள்" },
+  "L7.1": { en: "What is Navamsa?", ta: "நவாம்சம் என்றால் என்ன?" },
+  "L7.2": { en: "How to Calculate Navamsa", ta: "நவாம்சத்தை கணக்கிடுவது எப்படி" },
+  "L7.3": { en: "Pada to Navamsa", ta: "பாதம் → நவாம்சம்" },
+  "L7.4": { en: "Vargottama and Pushkara", ta: "வர்கோத்தமம் மற்றும் புஷ்கரம்" },
+  "L7.5": { en: "Uses of D9", ta: "D9-ன் பயன்கள்" },
+  "L7.6": { en: "Beginner Interpretation Workflow", ta: "தொடக்க நிலை விளக்க செயல்முறை" },
+};
+
+export const deckTitles: Record<string, { en: string; ta: string }> = {
+  FC1: { en: "Jyotish Foundations", ta: "ஜோதிட அடிப்படைகள்" },
+  FC2: { en: "Astronomy Essentials", ta: "வானியல் அடிப்படைகள்" },
+  FC3: { en: "Nakshatras", ta: "நட்சத்திரங்கள்" },
+  FC4: { en: "Grahas — Karakas, Dignity, Aspects", ta: "கிரகங்கள் — காரகம், பலம், பார்வை" },
+  FC5: { en: "Rasis — Signs", ta: "ராசிகள்" },
+  FC6: { en: "Bhavas — Houses", ta: "பாவங்கள் — வீடுகள்" },
+  FC7: { en: "Navamsa (D9)", ta: "நவாம்சம் (D9)" },
+};
+
+// Property label translations (for chips on entity cards)
+export const props: Record<string, Record<string, { en: string; ta: string }>> = {
+  element: {
+    fire: { en: "Fire", ta: "நெருப்பு (அக்னி)" },
+    earth: { en: "Earth", ta: "நிலம் (பிருத்வி)" },
+    air: { en: "Air", ta: "காற்று (வாயு)" },
+    water: { en: "Water", ta: "நீர் (ஜலம்)" },
+    ether: { en: "Ether", ta: "ஆகாயம்" },
+  },
+  modality: {
+    cardinal: { en: "Cardinal (Chara)", ta: "சர (நகரும்)" },
+    fixed: { en: "Fixed (Sthira)", ta: "ஸ்திர (நிலையான)" },
+    mutable: { en: "Mutable (Dwi Swabhava)", ta: "த்விஸ்வபாவ (இரட்டை)" },
+  },
+  purushartha: {
+    dharma: { en: "Dharma", ta: "தர்மம்" },
+    artha: { en: "Artha", ta: "அர்த்தம்" },
+    kama: { en: "Kama", ta: "காமம்" },
+    moksha: { en: "Moksha", ta: "மோட்சம்" },
+  },
+  gender: {
+    male: { en: "Male", ta: "ஆண்" },
+    masculine: { en: "Masculine", ta: "ஆண்" },
+    female: { en: "Female", ta: "பெண்" },
+    feminine: { en: "Feminine", ta: "பெண்" },
+    neuter: { en: "Neuter", ta: "நபும்சக" },
+  },
+  guna: {
+    sattva: { en: "Sattva", ta: "சத்வம்" },
+    rajas: { en: "Rajas", ta: "ரஜஸ்" },
+    tamas: { en: "Tamas", ta: "தமஸ்" },
+  },
+  varna: {
+    brahmin: { en: "Brahmin", ta: "பிராமண" },
+    kshatriya: { en: "Kshatriya", ta: "க்ஷத்ரிய" },
+    vaishya: { en: "Vaishya", ta: "வைஷ்ய" },
+    shudra: { en: "Shudra", ta: "சூத்ர" },
+    mlechha: { en: "Mlechha", ta: "ம்லேச்ச" },
+  },
+  classification: {
+    Kendra: { en: "Kendra", ta: "கேந்திரம்" },
+    Trikona: { en: "Trikona", ta: "திரிகோணம்" },
+    Upachaya: { en: "Upachaya", ta: "உபசயம்" },
+    Dusthana: { en: "Dusthana", ta: "துஷ்டானம்" },
+    Maraka: { en: "Maraka", ta: "மாரகம்" },
+  },
+};
+
+export function pickProp(category: string, key: string, lang: Lang): string {
+  const entry = props[category]?.[key.toLowerCase()];
+  if (!entry) return key;
+  return entry[lang] ?? entry.en;
+}
+
 export function pickName(
   kind: keyof typeof names,
   key: string,
@@ -498,6 +629,22 @@ export function pickName(
   const entry = (names[kind] as Record<string, { en: string; ta: string }>)[key];
   if (!entry) return key;
   return entry[lang] ?? entry.en;
+}
+
+export function pickLevelTitle(levelNum: number, lang: Lang): string {
+  return levels[levelNum]?.[lang]?.title ?? levels[levelNum]?.en?.title ?? "";
+}
+
+export function pickLevelSubtitle(levelNum: number, lang: Lang): string {
+  return levels[levelNum]?.[lang]?.subtitle ?? levels[levelNum]?.en?.subtitle ?? "";
+}
+
+export function pickLessonTitle(lessonId: string, lang: Lang): string {
+  return lessonTitles[lessonId]?.[lang] ?? lessonTitles[lessonId]?.en ?? lessonId;
+}
+
+export function pickDeckTitle(deckId: string, lang: Lang): string {
+  return deckTitles[deckId]?.[lang] ?? deckTitles[deckId]?.en ?? deckId;
 }
 
 export function format(template: string, vars: Record<string, string | number>): string {

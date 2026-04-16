@@ -1,6 +1,6 @@
 import { kb } from "@/lib/kb";
 import { getDict, getLang } from "@/i18n/server";
-import { pickName } from "@/i18n/dict";
+import { pickName, pickProp } from "@/i18n/dict";
 
 export default function BhavasPage() {
   const t = getDict();
@@ -34,20 +34,19 @@ export default function BhavasPage() {
           const rulerName = pickName("grahas", b.natural_ruler, lang);
           return (
             <article key={b.num} className="card">
-              <div className="flex items-start justify-between mb-2">
+              <div className="flex items-start justify-between mb-2 flex-wrap gap-2">
                 <div>
                   <h2 className="font-serif text-xl text-gold-200">
                     {b.num}. {displayName}
                   </h2>
                   <div className="text-sm text-ink-300">{b.english}</div>
-                  <div className="text-xs text-ink-400">{b.tamil}</div>
                 </div>
-                <div className="text-right text-xs space-y-0.5">
-                  {b.kendra && <div className="chip-gold inline-block">Kendra</div>}
-                  {b.trikona && <div className="chip-gold inline-block ml-1">Trikona</div>}
-                  {b.upachaya && <div className="chip inline-block ml-1">Upachaya</div>}
-                  {b.dusthana && <div className="chip inline-block ml-1 border-red-500/30 text-red-200">Dusthana</div>}
-                  {b.maraka && <div className="chip inline-block ml-1 border-red-500/30 text-red-200">Maraka</div>}
+                <div className="text-right text-xs flex flex-wrap gap-1">
+                  {b.kendra && <span className="chip-gold">{pickProp("classification", "Kendra", lang)}</span>}
+                  {b.trikona && <span className="chip-gold">{pickProp("classification", "Trikona", lang)}</span>}
+                  {b.upachaya && <span className="chip">{pickProp("classification", "Upachaya", lang)}</span>}
+                  {b.dusthana && <span className="chip border-red-500/30 text-red-200">{pickProp("classification", "Dusthana", lang)}</span>}
+                  {b.maraka && <span className="chip border-red-500/30 text-red-200">{pickProp("classification", "Maraka", lang)}</span>}
                 </div>
               </div>
               <div className="grid md:grid-cols-3 gap-3 text-sm">
@@ -57,7 +56,7 @@ export default function BhavasPage() {
                   <div className="text-xs text-ink-300">
                     {t.reference.naturalKaraka}: {Array.isArray(b.natural_karaka) ? b.natural_karaka.map((k: string) => pickName("grahas", k, lang)).join(" + ") : pickName("grahas", b.natural_karaka, lang)}
                   </div>
-                  <div className="text-xs text-ink-300">{t.reference.purushartha}: {b.purushartha}</div>
+                  <div className="text-xs text-ink-300">{t.reference.purushartha}: {pickProp("purushartha", b.purushartha, lang)}</div>
                 </div>
                 <div className="md:col-span-2">
                   <div className="text-xs uppercase text-ink-400 mb-1">{t.reference.significations}</div>
@@ -65,7 +64,7 @@ export default function BhavasPage() {
                     {(b.significations ?? []).map((s: string, i: number) => <li key={i}>{s}</li>)}
                   </ul>
                   {b.body_parts && (
-                    <div className="mt-2 text-xs text-ink-400"><span className="text-ink-400">{t.reference.body}: </span>{b.body_parts}</div>
+                    <div className="mt-2 text-xs text-ink-400"><span>{t.reference.body}: </span>{b.body_parts}</div>
                   )}
                 </div>
               </div>

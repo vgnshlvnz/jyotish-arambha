@@ -1,6 +1,7 @@
 "use client";
 
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
+import Link from "next/link";
 import { dict, LANG_LABELS, LANGS, type Lang } from "./dict";
 
 const LangContext = createContext<Lang>("en");
@@ -48,5 +49,43 @@ export function LangSwitcher() {
         </button>
       ))}
     </div>
+  );
+}
+
+// Mobile hamburger menu — receives links as JSON string since it crosses server→client boundary
+export function MobileMenu({ linksJson }: { linksJson: string }) {
+  const [open, setOpen] = useState(false);
+  const links: { href: string; label: string }[] = JSON.parse(linksJson);
+
+  return (
+    <>
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="md:hidden flex items-center justify-center w-9 h-9 rounded-md bg-ink-700 border border-ink-500 text-ink-200 hover:text-gold-200 transition-colors"
+        aria-label="Menu"
+      >
+        {open ? "✕" : "☰"}
+      </button>
+
+      {open && (
+        <div className="fixed inset-0 top-[57px] z-40 bg-ink-900/95 backdrop-blur md:hidden">
+          <nav className="max-w-md mx-auto px-6 py-6">
+            <ul className="space-y-2">
+              {links.map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    onClick={() => setOpen(false)}
+                    className="block px-4 py-3 rounded-lg text-lg text-ink-100 hover:text-gold-200 hover:bg-ink-700 transition-colors"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      )}
+    </>
   );
 }

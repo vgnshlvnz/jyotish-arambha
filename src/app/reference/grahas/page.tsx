@@ -1,6 +1,6 @@
 import { kb } from "@/lib/kb";
 import { getDict, getLang } from "@/i18n/server";
-import { pickName } from "@/i18n/dict";
+import { pickName, pickProp } from "@/i18n/dict";
 
 export default function GrahasPage() {
   const t = getDict();
@@ -22,11 +22,11 @@ export default function GrahasPage() {
                   {p.symbol} {displayName}
                   {lang === "ta" && <span className="ml-2 text-sm text-ink-400">({p.english})</span>}
                 </h2>
-                <div className="text-xs text-ink-300 space-x-2">
-                  <span className="chip">{p.gender}</span>
-                  <span className="chip">{p.guna}</span>
-                  {p.element && <span className="chip">{p.element}</span>}
-                  {p.varna && <span className="chip">{p.varna}</span>}
+                <div className="text-xs text-ink-300 flex flex-wrap gap-1">
+                  <span className="chip">{pickProp("gender", p.gender, lang)}</span>
+                  <span className="chip">{pickProp("guna", p.guna, lang)}</span>
+                  {p.element && <span className="chip">{pickProp("element", p.element, lang)}</span>}
+                  {p.varna && <span className="chip">{pickProp("varna", p.varna, lang)}</span>}
                 </div>
               </div>
               <div className="text-sm text-ink-300 mb-3">

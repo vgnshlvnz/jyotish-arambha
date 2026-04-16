@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { content } from "@/lib/kb";
 import { LevelUnlockBadge } from "@/components/LevelUnlockBadge";
-import { getDict } from "@/i18n/server";
+import { getDict, getLang } from "@/i18n/server";
+import { pickLevelTitle, pickLevelSubtitle, pickLessonTitle } from "@/i18n/dict";
 
 export default function LearnIndex() {
   const t = getDict();
+  const lang = getLang();
   return (
     <div className="space-y-8">
       <header>
@@ -18,12 +20,12 @@ export default function LearnIndex() {
             <Link href={`/learn/${lvl.level}`} className="card block">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <div className="flex items-center gap-2 mb-1">
+                  <div className="flex items-center gap-2 mb-1 flex-wrap">
                     <span className="chip-gold">{t.common.level} {lvl.level}</span>
                     <LevelUnlockBadge levelNum={lvl.level} />
                   </div>
-                  <h2 className="text-xl font-semibold text-ink-100">{lvl.title}</h2>
-                  <p className="text-sm text-ink-300 mt-0.5">{lvl.subtitle}</p>
+                  <h2 className="text-xl font-semibold text-ink-100">{pickLevelTitle(lvl.level, lang)}</h2>
+                  <p className="text-sm text-ink-300 mt-0.5">{pickLevelSubtitle(lvl.level, lang)}</p>
                 </div>
                 <div className="text-right text-xs text-ink-300 shrink-0">
                   <div>{lvl.lessons.length} {t.common.lessons}</div>
@@ -32,7 +34,7 @@ export default function LearnIndex() {
               </div>
               <div className="mt-3 flex flex-wrap gap-2">
                 {lvl.lessons.slice(0, 3).map((lesson) => (
-                  <span key={lesson.id} className="chip">{lesson.title}</span>
+                  <span key={lesson.id} className="chip">{pickLessonTitle(lesson.id, lang)}</span>
                 ))}
                 {lvl.lessons.length > 3 && (
                   <span className="chip">+{lvl.lessons.length - 3} {t.common.more}</span>
