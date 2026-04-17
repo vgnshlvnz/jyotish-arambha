@@ -18,9 +18,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LangProvider lang={lang}>
           <Nav />
           <main className="max-w-6xl mx-auto px-4 py-8">{children}</main>
-          <footer className="max-w-6xl mx-auto px-4 py-12 text-center text-xs text-ink-300">
-            {t.footer}
-          </footer>
         </LangProvider>
       </body>
     </html>
